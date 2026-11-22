@@ -1,0 +1,37 @@
+{
+  "id": "N2-G-3-1795377256",
+  "fault": "N2",
+  "arm": "G",
+  "rep": 3,
+  "fault_desc": "SIGSTOP payment",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 8,
+  "attempts": 1,
+  "blocked_attempts": 1,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T19:54:22+00:00",
+  "impact": true,
+  "alert_s": 6.6,
+  "decision": "escalate",
+  "cause": "deployment/payment",
+  "diagnosis": "Checkout timeouts persist and checkout telemetry associates failures with PaymentService/Charge. The payment deployment has no previous revision, so rollback is unavailable; a human must investigate the recent payment change and restore a known-good configuration or revision.",
+  "confidence": 68,
+  "decided_s": 84.2,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.008446,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T19:55:53+00:00",
+  "total_s": 90.7,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

@@ -1,0 +1,46 @@
+{
+  "id": "N2-G-1-1795378444",
+  "fault": "N2",
+  "arm": "G",
+  "rep": 1,
+  "fault_desc": "SIGSTOP payment",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 6,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "delete_pod",
+      "name": "flagd-bf95f6b89-l2t45"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T20:14:09+00:00",
+  "impact": true,
+  "alert_s": 6.1,
+  "decision": "fix",
+  "cause": "deployment/flagd",
+  "diagnosis": "Checkout journeys continue to time out. Telemetry shows roughly 4.7\u20134.85 s latency on flag-service egress and flagd EventStream, implicating flagd in the checkout-path slowdown. Flagd is ready, but a pod restart is the smallest safe recovery action.",
+  "confidence": 72,
+  "decided_s": 61.3,
+  "outcome": "TIMEOUT",
+  "cost_usd": 0.005656,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T20:16:32+00:00",
+  "total_s": 142.7,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/flagd"
+    ],
+    "innocent_writes": [
+      "deployment/flagd"
+    ],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

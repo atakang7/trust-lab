@@ -1,0 +1,327 @@
+[
+  [
+    -9.08,
+    true,
+    null
+  ],
+  [
+    -8.08,
+    true,
+    null
+  ],
+  [
+    -7.08,
+    true,
+    null
+  ],
+  [
+    -6.08,
+    true,
+    null
+  ],
+  [
+    -5.08,
+    true,
+    null
+  ],
+  [
+    -4.08,
+    true,
+    null
+  ],
+  [
+    -3.08,
+    true,
+    null
+  ],
+  [
+    -2.08,
+    true,
+    null
+  ],
+  [
+    -1.08,
+    true,
+    null
+  ],
+  [
+    -0.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    0.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    1.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    2.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    3.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    4.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    5.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    6.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    7.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    8.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    9.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    10.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    11.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    12.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    13.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    14.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    15.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    16.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    17.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    18.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    19.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    20.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    21.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    22.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    23.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    24.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    25.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    26.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    27.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    28.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    29.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    30.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    31.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    32.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    33.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    34.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    35.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    36.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    37.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    38.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    39.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    40.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    41.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    42.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    43.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    44.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    45.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    46.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    47.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    48.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    49.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    50.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    51.99,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    52.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    53.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    54.99,
+    false,
+    "checkout http 500 0.0s"
+  ]
+]

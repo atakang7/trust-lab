@@ -1,0 +1,50 @@
+{
+  "id": "N2-script-2-1795377061",
+  "fault": "N2",
+  "arm": "script",
+  "rep": 2,
+  "fault_desc": "SIGSTOP payment",
+  "model": "script",
+  "llm_calls": 0,
+  "attempts": 2,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "delete_pod",
+      "name": "checkout-64b4f8969c-fd67d"
+    },
+    {
+      "type": "delete_pod",
+      "name": "checkout-64b4f8969c-wzqjk"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T19:51:07+00:00",
+  "impact": true,
+  "alert_s": 6.1,
+  "decision": "fix",
+  "cause": "deployment/checkout",
+  "diagnosis": null,
+  "confidence": null,
+  "decided_s": 100.3,
+  "outcome": "TIMEOUT",
+  "cost_usd": 0,
+  "served": [],
+  "end": "2026-11-22T19:54:08+00:00",
+  "total_s": 181.6,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/checkout",
+      "deployment/checkout"
+    ],
+    "innocent_writes": [
+      "deployment/checkout",
+      "deployment/checkout"
+    ],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

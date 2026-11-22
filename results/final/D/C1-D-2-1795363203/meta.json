@@ -1,0 +1,37 @@
+{
+  "id": "C1-D-2-1795363203",
+  "fault": "C1",
+  "arm": "D",
+  "rep": 2,
+  "fault_desc": "paymentFailure 100%",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 5,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T16:00:10+00:00",
+  "impact": true,
+  "alert_s": 3.5,
+  "decision": "escalate",
+  "cause": "checkout service returning HTTP 422 errors",
+  "diagnosis": "All synthetic journeys are failing with checkout HTTP 422 errors (Unprocessable Entity). The checkout deployment and pod appear healthy (running, ready, no restarts), but logs are empty or not accessible. HTTP 422 suggests the checkout service is receiving valid requests but cannot process them due to semantic errors, possibly due to invalid data format, missing dependencies, or downstream service issues that aren't visible from basic deployment/pod status. Need deeper investigation into checkout service logs, dependencies (payment, cart, shipping, etc.), and request payloads.",
+  "confidence": 85,
+  "decided_s": 67.5,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.002944,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T16:01:21+00:00",
+  "total_s": 71.0,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

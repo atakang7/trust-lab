@@ -1,0 +1,45 @@
+{
+  "id": "D3-script-1-1795367749",
+  "fault": "D3",
+  "arm": "script",
+  "rep": 1,
+  "fault_desc": "unlogged cart to 0, then imageSlowLoad",
+  "model": "script",
+  "llm_calls": 0,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "set_flag",
+      "flag": "imageSlowLoad",
+      "variant": "off"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T17:15:56+00:00",
+  "impact": true,
+  "alert_s": 6.1,
+  "decision": "escalate",
+  "cause": "deployment/cart",
+  "diagnosis": null,
+  "confidence": null,
+  "decided_s": 100.2,
+  "outcome": "ESCALATED",
+  "cost_usd": 0,
+  "served": [],
+  "end": "2026-11-22T17:17:42+00:00",
+  "total_s": 106.2,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "flag/imageSlowLoad"
+    ],
+    "innocent_writes": [
+      "flag/imageSlowLoad"
+    ],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

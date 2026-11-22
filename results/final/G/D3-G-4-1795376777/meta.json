@@ -1,0 +1,46 @@
+{
+  "id": "D3-G-4-1795376777",
+  "fault": "D3",
+  "arm": "G",
+  "rep": 4,
+  "fault_desc": "unlogged cart to 0, then imageSlowLoad",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 3,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "scale",
+      "name": "cart",
+      "replicas": 1
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T19:46:24+00:00",
+  "impact": true,
+  "alert_s": 3.1,
+  "decision": "fix",
+  "cause": "deployment/cart",
+  "diagnosis": "Cart is unavailable: its Deployment is set to 0 replicas and the cart Service has no endpoints, matching the persistent 500s on /api/cart. Restore one replica; the imageSlowLoad flag change is unrelated to the cart outage.",
+  "confidence": 99,
+  "decided_s": 37.6,
+  "fixed_s": 75.8,
+  "outcome": "FIXED",
+  "cost_usd": 0.002074,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T19:47:43+00:00",
+  "total_s": 78.8,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/cart"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

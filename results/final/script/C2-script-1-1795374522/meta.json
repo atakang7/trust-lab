@@ -1,0 +1,43 @@
+{
+  "id": "C2-script-1-1795374522",
+  "fault": "C2",
+  "arm": "script",
+  "rep": 1,
+  "fault_desc": "checkout wrong payment port",
+  "model": "script",
+  "llm_calls": 0,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "rollout_undo",
+      "name": "checkout"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T19:08:48+00:00",
+  "impact": true,
+  "alert_s": 10.6,
+  "decision": "fix",
+  "cause": "deployment/checkout",
+  "diagnosis": null,
+  "confidence": null,
+  "decided_s": 25.0,
+  "fixed_s": 39.2,
+  "outcome": "FIXED",
+  "cost_usd": 0,
+  "served": [],
+  "end": "2026-11-22T19:09:38+00:00",
+  "total_s": 49.8,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/checkout"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

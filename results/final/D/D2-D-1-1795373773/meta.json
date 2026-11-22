@@ -1,0 +1,37 @@
+{
+  "id": "D2-D-1-1795373773",
+  "fault": "D2",
+  "arm": "D",
+  "rep": 1,
+  "fault_desc": "unlogged wrong port, then benign payment release",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T18:56:19+00:00",
+  "impact": true,
+  "alert_s": 6.1,
+  "decision": "escalate",
+  "cause": "checkout-797cb78c85-p6m9j",
+  "diagnosis": "Checkout pod is running but not producing logs and synthetic journeys show HTTP 500 then ReadTimeout errors. Recent deployment changed checkout image (busybox init container pulled). The pod shows ready but likely the checkout container is not actually serving requests properly. Frontend-proxy logs are stale (4 days old). This suggests the checkout service may be stuck or failing silently despite readiness probe passing. Need human investigation of container health and networking.",
+  "confidence": 75,
+  "decided_s": 54.6,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.009926,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T18:57:20+00:00",
+  "total_s": 60.7,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

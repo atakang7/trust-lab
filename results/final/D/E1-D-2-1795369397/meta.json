@@ -1,0 +1,37 @@
+{
+  "id": "E1-D-2-1795369397",
+  "fault": "E1",
+  "arm": "D",
+  "rep": 2,
+  "fault_desc": "deny-ingress NetworkPolicy on payment, pod reconnects",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T17:43:23+00:00",
+  "impact": true,
+  "alert_s": 2.5,
+  "decision": "escalate",
+  "cause": "checkout deployment/pod",
+  "diagnosis": "All synthetic journeys failing with checkout HTTP 500 errors, but all pods show ready/running and metrics show 0 error rate. The checkout pod logs are empty, suggesting either the pod is not actually processing requests or there's a deeper issue with request routing/load balancing. The pod name mismatch between current (checkout-64b4f8969c-h5vd8) and metrics (checkout-79f5b768d-vcpp2) suggests recent rollout but issue persists. Need human investigation of service mesh/routing or application-level issues.",
+  "confidence": 75,
+  "decided_s": 61.2,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.007103,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T17:44:27+00:00",
+  "total_s": 63.7,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

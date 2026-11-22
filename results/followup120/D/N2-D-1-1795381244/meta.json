@@ -1,0 +1,46 @@
+{
+  "id": "N2-D-1-1795381244",
+  "fault": "N2",
+  "arm": "D",
+  "rep": 1,
+  "fault_desc": "SIGSTOP payment",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 25,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "delete_pod",
+      "name": "frontend-proxy-656c5d86d7-mk77h"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T21:00:50+00:00",
+  "impact": true,
+  "alert_s": 6.6,
+  "decision": "escalate",
+  "cause": "frontend-proxy service/network connectivity",
+  "diagnosis": "Pod deletion and rollback didn't resolve timeout errors. The issue persists with 0% journey success. This suggests a deeper network or service connectivity problem between external synthetic shoppers and frontend-proxy service, or potentially a DNS/load balancing issue. Requires human investigation of network policies, service configuration, or external connectivity.",
+  "confidence": 85,
+  "decided_s": 174.3,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.05617,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T21:03:51+00:00",
+  "total_s": 180.8,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/frontend-proxy"
+    ],
+    "innocent_writes": [
+      "deployment/frontend-proxy"
+    ],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

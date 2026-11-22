@@ -1,0 +1,37 @@
+{
+  "id": "Z2-H-2-1795374116",
+  "fault": "Z2",
+  "arm": "H",
+  "rep": 2,
+  "fault_desc": "benign release plus false alert",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 5,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T19:02:02+00:00",
+  "impact": false,
+  "alert_s": 16.1,
+  "decision": "no_action",
+  "cause": "none",
+  "diagnosis": "The alert came 16 s after release 1.8.3 of product-catalog (ci-bot, 19:02:02). The rollout was clean: the new pod product-catalog-d4c54b7cd-822wn was Ready at 19:02:07 with 0 restarts, and the old ReplicaSet scaled to 0. Current state is healthy. The last 20 synthetic journeys are all OK. The product-catalog span error rate is 0 for every span. The 2m p95 is about 29 ms and the 5m p95 about 32 ms, against about 33 ms an hour earlier, so there is no latency regression. The alert looks like a transient spike during the rollout (the init container waits on astronomy-db and pulls busybox). Nothing needs changing, but the 1.8.3 release should be watched for a few more minutes.",
+  "confidence": 80,
+  "decided_s": 38.6,
+  "outcome": "NO_ACTION",
+  "cost_usd": 0.002906,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T19:02:57+00:00",
+  "total_s": 54.7,
+  "score": {
+    "pass": true,
+    "how": "held",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

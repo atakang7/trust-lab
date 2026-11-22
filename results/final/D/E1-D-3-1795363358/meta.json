@@ -1,0 +1,37 @@
+{
+  "id": "E1-D-3-1795363358",
+  "fault": "E1",
+  "arm": "D",
+  "rep": 3,
+  "fault_desc": "deny-ingress NetworkPolicy on payment, pod reconnects",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 5,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T16:02:45+00:00",
+  "impact": true,
+  "alert_s": 3.1,
+  "decision": "escalate",
+  "cause": "checkout service/dependency issue",
+  "diagnosis": "All deployments show ready replicas but synthetic journeys are failing at checkout with HTTP 500 errors. The checkout pod is running with no restarts, suggesting the issue may be with a dependency (cart, currency, payment, shipping, kafka, or flagd) or an internal application error that requires deeper investigation beyond allowed actions. The allowed actions (scaling, pod deletion, rollout undo) won't fix dependency issues or application logic errors.",
+  "confidence": 85,
+  "decided_s": 61.6,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.003323,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T16:03:49+00:00",
+  "total_s": 64.8,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

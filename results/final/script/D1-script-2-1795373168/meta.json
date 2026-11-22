@@ -1,0 +1,51 @@
+{
+  "id": "D1-script-2-1795373168",
+  "fault": "D1",
+  "arm": "script",
+  "rep": 2,
+  "fault_desc": "paymentUnreachable, then benign payment release",
+  "model": "script",
+  "llm_calls": 0,
+  "attempts": 2,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "rollout_undo",
+      "name": "payment"
+    },
+    {
+      "type": "set_flag",
+      "flag": "paymentUnreachable",
+      "variant": "off"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T18:46:14+00:00",
+  "impact": true,
+  "alert_s": 3.1,
+  "decision": "fix",
+  "cause": "flag/paymentUnreachable",
+  "diagnosis": null,
+  "confidence": null,
+  "decided_s": 100.5,
+  "fixed_s": 113.6,
+  "outcome": "FIXED",
+  "cost_usd": 0,
+  "served": [],
+  "end": "2026-11-22T18:48:11+00:00",
+  "total_s": 116.7,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/payment",
+      "flag/paymentUnreachable"
+    ],
+    "innocent_writes": [
+      "deployment/payment"
+    ],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

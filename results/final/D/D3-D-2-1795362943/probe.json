@@ -1,0 +1,547 @@
+[
+  [
+    -9.08,
+    true,
+    null
+  ],
+  [
+    -8.08,
+    true,
+    null
+  ],
+  [
+    -7.08,
+    true,
+    null
+  ],
+  [
+    -6.07,
+    true,
+    null
+  ],
+  [
+    -5.07,
+    true,
+    null
+  ],
+  [
+    -4.07,
+    true,
+    null
+  ],
+  [
+    -3.07,
+    true,
+    null
+  ],
+  [
+    -2.07,
+    true,
+    null
+  ],
+  [
+    -1.07,
+    true,
+    null
+  ],
+  [
+    -0.07,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    0.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    1.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    2.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    3.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    4.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    5.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    6.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    7.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    8.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    9.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    10.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    11.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    12.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    13.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    14.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    15.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    16.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    17.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    18.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    19.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    20.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    21.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    22.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    23.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    24.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    25.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    26.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    27.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    28.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    29.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    30.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    31.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    32.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    33.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    34.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    35.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    36.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    37.93,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    38.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    39.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    40.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    41.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    42.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    43.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    44.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    45.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    46.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    47.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    48.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    49.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    50.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    51.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    52.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    53.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    54.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    55.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    56.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    57.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    58.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    59.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    60.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    61.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    62.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    63.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    64.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    65.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    66.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    67.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    68.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    69.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    70.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    71.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    72.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    73.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    74.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    75.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    76.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    77.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    78.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    79.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    80.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    81.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    82.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    83.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    84.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    85.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    86.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    87.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    88.94,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    89.94,
+    true,
+    null
+  ],
+  [
+    90.94,
+    true,
+    null
+  ],
+  [
+    91.94,
+    true,
+    null
+  ],
+  [
+    92.94,
+    true,
+    null
+  ],
+  [
+    93.94,
+    true,
+    null
+  ],
+  [
+    94.94,
+    true,
+    null
+  ],
+  [
+    95.94,
+    true,
+    null
+  ],
+  [
+    96.94,
+    true,
+    null
+  ],
+  [
+    97.94,
+    true,
+    null
+  ],
+  [
+    98.94,
+    true,
+    null
+  ]
+]

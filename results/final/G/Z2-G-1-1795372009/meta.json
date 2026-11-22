@@ -1,0 +1,37 @@
+{
+  "id": "Z2-G-1-1795372009",
+  "fault": "Z2",
+  "arm": "G",
+  "rep": 1,
+  "fault_desc": "benign release plus false alert",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 4,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T18:26:55+00:00",
+  "impact": false,
+  "alert_s": 17.1,
+  "decision": "no_action",
+  "cause": "none",
+  "diagnosis": "The alert coincided with a product-catalog rollout: the new pod became ready at 18:27:00, shortly before the alert. The deployment is currently available, its endpoint is ready, and all 20 recent synthetic journeys succeeded. No current evidence justifies a change; this appears to have been a transient rollout-related latency alert that has recovered.",
+  "confidence": 94,
+  "decided_s": 44.0,
+  "outcome": "NO_ACTION",
+  "cost_usd": 0.002352,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T18:27:56+00:00",
+  "total_s": 61.1,
+  "score": {
+    "pass": true,
+    "how": "held",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

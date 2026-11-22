@@ -1,0 +1,45 @@
+{
+  "id": "C2-D-1-1795364476",
+  "fault": "C2",
+  "arm": "D",
+  "rep": 1,
+  "fault_desc": "checkout wrong payment port",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "rollout_undo",
+      "name": "checkout"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T16:21:23+00:00",
+  "impact": true,
+  "alert_s": 10.5,
+  "decision": "fix",
+  "cause": "deployment/checkout",
+  "diagnosis": "Recent change to PAYMENT_ADDR environment variable in checkout deployment likely causing checkout service to fail (500 errors). The checkout pod is running but may be misconfigured, leading to frontend-proxy timeouts when calling checkout.",
+  "confidence": 85,
+  "decided_s": 48.6,
+  "fixed_s": 71.8,
+  "outcome": "FIXED",
+  "cost_usd": 0.009032,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T16:22:45+00:00",
+  "total_s": 82.4,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/checkout"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

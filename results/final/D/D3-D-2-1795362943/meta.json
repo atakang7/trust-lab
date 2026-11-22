@@ -1,0 +1,46 @@
+{
+  "id": "D3-D-2-1795362943",
+  "fault": "D3",
+  "arm": "D",
+  "rep": 2,
+  "fault_desc": "unlogged cart to 0, then imageSlowLoad",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 8,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "scale",
+      "name": "cart",
+      "replicas": 1
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T15:55:49+00:00",
+  "impact": true,
+  "alert_s": 3.0,
+  "decision": "fix",
+  "cause": "deployment/cart",
+  "diagnosis": "Cart deployment scaled to 0 replicas causing all cart API requests to fail with HTTP 500 errors. No cart pods are running, while the cart service exists and routes traffic to non-existent pods. This explains the synthetic journey failures on cart operations.",
+  "confidence": 95,
+  "decided_s": 56.9,
+  "fixed_s": 96.1,
+  "outcome": "FIXED",
+  "cost_usd": 0.005879,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T15:57:29+00:00",
+  "total_s": 99.1,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/cart"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

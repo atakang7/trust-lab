@@ -1,0 +1,2 @@
+2026-11-22T20:51:12+00:00 DRYRUN PASS {"type": "patch_deployment", "name": "checkout", "patch": {"spec": {"template": {"spec": {"containers": [{"name": "checkout", "env": [{"name": "PAYMENT_ADDR", "value": "payment:8080"}]}]}}}}} :: dry-run ok
+2026-11-22T20:51:12+00:00 APPLY OK {"type": "patch_deployment", "name": "checkout", "patch": {"spec": {"template": {"spec": {"containers": [{"name": "checkout", "env": [{"name": "PAYMENT_ADDR", "value": "payment:8080"}]}]}}}}} :: applied

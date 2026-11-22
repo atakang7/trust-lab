@@ -1,0 +1,512 @@
+[
+  [
+    -9.04,
+    true,
+    null
+  ],
+  [
+    -8.04,
+    true,
+    null
+  ],
+  [
+    -7.04,
+    true,
+    null
+  ],
+  [
+    -6.04,
+    true,
+    null
+  ],
+  [
+    -5.04,
+    true,
+    null
+  ],
+  [
+    -4.04,
+    true,
+    null
+  ],
+  [
+    -3.04,
+    true,
+    null
+  ],
+  [
+    -2.04,
+    true,
+    null
+  ],
+  [
+    -1.04,
+    true,
+    null
+  ],
+  [
+    -0.04,
+    true,
+    null
+  ],
+  [
+    0.96,
+    true,
+    null
+  ],
+  [
+    1.96,
+    true,
+    null
+  ],
+  [
+    2.96,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    3.96,
+    false,
+    "checkout http 500 1.0s"
+  ],
+  [
+    4.96,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    5.96,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    6.96,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    7.96,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    8.97,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    9.97,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    10.97,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    11.97,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    12.97,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    13.97,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    14.97,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    15.97,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    16.97,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    17.97,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    18.97,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    19.97,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    20.97,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    21.97,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    22.97,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    23.97,
+    false,
+    "checkout http 500 2.0s"
+  ],
+  [
+    24.97,
+    false,
+    "checkout http 500 1.0s"
+  ],
+  [
+    25.97,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    26.97,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    27.97,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    28.97,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    29.97,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    30.97,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    31.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    32.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    33.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    34.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    35.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    36.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    37.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    38.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    39.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    40.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    41.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    42.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    43.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    44.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    45.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    46.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    47.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    48.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    49.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    50.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    51.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    52.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    53.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    54.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    55.98,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    56.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    57.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    58.98,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    59.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    60.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    61.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    62.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    63.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    64.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    65.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    66.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    67.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    68.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    69.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    70.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    71.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    72.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    73.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    74.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    75.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    76.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    77.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    78.98,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    79.98,
+    false,
+    "checkout http 500 2.6s"
+  ],
+  [
+    80.98,
+    false,
+    "checkout http 500 1.6s"
+  ],
+  [
+    81.98,
+    false,
+    "checkout http 500 0.6s"
+  ],
+  [
+    82.98,
+    true,
+    null
+  ],
+  [
+    83.98,
+    true,
+    null
+  ],
+  [
+    84.98,
+    true,
+    null
+  ],
+  [
+    85.98,
+    true,
+    null
+  ],
+  [
+    86.98,
+    true,
+    null
+  ],
+  [
+    87.98,
+    true,
+    null
+  ],
+  [
+    88.98,
+    true,
+    null
+  ],
+  [
+    89.98,
+    true,
+    null
+  ],
+  [
+    90.98,
+    true,
+    null
+  ],
+  [
+    91.98,
+    true,
+    null
+  ]
+]

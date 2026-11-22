@@ -1,0 +1,46 @@
+{
+  "id": "N1-H-2-1795374728",
+  "fault": "N1",
+  "arm": "H",
+  "rep": 2,
+  "fault_desc": "CLIENT PAUSE on valkey-cart",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 7,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "delete_pod",
+      "name": "cart-78b98c8995-ncb4d"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T19:12:15+00:00",
+  "impact": true,
+  "alert_s": 5.6,
+  "decision": "escalate",
+  "cause": "deployment/cart (cart-to-valkey-cart connectivity; root cause not confirmed)",
+  "diagnosis": "Cart journeys were failing with ReadTimeout and HTTP 500. The cart pod logs showed StackExchange.Redis timeouts ('no connection became available') on every HGET against valkey-cart:6379, while valkey-cart was Running, Ready, and had no restarts. I deleted cart-78b98c8995-ncb4d to reset the Redis connection pool. That did not fix the failure, and the change was rolled back. Journeys are still at 0% OK. Restarting the cart pod was therefore not the fix, and my earlier stated root cause was an unverified hypothesis. The remaining suspects are a network or service path problem between cart and valkey-cart, a Valkey-side connection limit or stall that the logs do not show, or an issue in frontend-proxy routing to cart. A human should check cart-to-valkey-cart connectivity directly and the frontend-proxy /api/cart path, and review Valkey connection metrics.",
+  "confidence": 35,
+  "decided_s": 125.9,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.005702,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T19:14:26+00:00",
+  "total_s": 131.5,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/cart"
+    ],
+    "innocent_writes": [
+      "deployment/cart"
+    ],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

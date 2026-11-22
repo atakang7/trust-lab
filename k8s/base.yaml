@@ -1,0 +1,91 @@
+apiVersion: v1
+kind: Namespace
+metadata: {name: trust-lab}
+---
+apiVersion: v1
+kind: Namespace
+metadata: {name: trust-ctl}
+---
+apiVersion: v1
+kind: Namespace
+metadata: {name: chaos-mesh}
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata: {name: trust-lab-quota, namespace: trust-lab}
+spec:
+  hard: {requests.cpu: "3", requests.memory: 14Gi}
+---
+apiVersion: v1
+kind: LimitRange
+metadata: {name: defaults, namespace: trust-lab}
+spec:
+  limits:
+  - type: Container
+    defaultRequest: {cpu: 20m, memory: 64Mi}
+    default: {cpu: "1", memory: 512Mi}
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata: {name: agent-reader, namespace: trust-ctl}
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata: {name: controller, namespace: trust-ctl}
+---
+# agent: read-only in trust-lab, no secrets, no chaos CRDs
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata: {name: agent-reader, namespace: trust-lab}
+rules:
+- apiGroups: [""]
+  resources: [pods, pods/log, services, endpoints, events, configmaps]
+  verbs: [get, list, watch]
+- apiGroups: [apps]
+  resources: [deployments, replicasets, statefulsets]
+  verbs: [get, list, watch]
+- apiGroups: [networking.k8s.io]
+  resources: [networkpolicies]
+  verbs: [get, list, watch]
+- apiGroups: [events.k8s.io]
+  resources: [events]
+  verbs: [get, list, watch]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata: {name: agent-reader, namespace: trust-lab}
+roleRef: {apiGroup: rbac.authorization.k8s.io, kind: Role, name: agent-reader}
+subjects: [{kind: ServiceAccount, name: agent-reader, namespace: trust-ctl}]
+---
+# controller: full rights in trust-lab (incl. Chaos Mesh CRs there)
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata: {name: controller, namespace: trust-lab}
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata: {name: controller, namespace: trust-lab}
+roleRef: {apiGroup: rbac.authorization.k8s.io, kind: Role, name: controller}
+subjects: [{kind: ServiceAccount, name: controller, namespace: trust-ctl}]
+---
+# controller: read nodes cluster-wide (F08 targeting, precheck)
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata: {name: trust-controller-nodes}
+rules:
+- apiGroups: [""]
+  resources: [nodes]
+  verbs: [get, list]
+- apiGroups: [metrics.k8s.io]
+  resources: [nodes, pods]
+  verbs: [get, list]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata: {name: trust-controller-nodes}
+roleRef: {apiGroup: rbac.authorization.k8s.io, kind: ClusterRole, name: trust-controller-nodes}
+subjects: [{kind: ServiceAccount, name: controller, namespace: trust-ctl}]

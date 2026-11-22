@@ -1,0 +1,37 @@
+{
+  "id": "D2-D-4-1795372241",
+  "fault": "D2",
+  "arm": "D",
+  "rep": 4,
+  "fault_desc": "unlogged wrong port, then benign payment release",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T18:30:47+00:00",
+  "impact": true,
+  "alert_s": 9.1,
+  "decision": "escalate",
+  "cause": "frontend-proxy/frontend-proxy-656c5d86d7-mk77h",
+  "diagnosis": "Synthetic journeys failing at checkout with ReadTimeout to frontend-proxy:8080. All pods show Running and Ready but frontend-proxy logs are stale (Nov 18). The pod may be stuck or not actually serving traffic despite readiness probe passing. Need deeper investigation of pod networking/connectivity.",
+  "confidence": 75,
+  "decided_s": 53.0,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.009171,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T18:31:49+00:00",
+  "total_s": 62.0,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

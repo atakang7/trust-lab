@@ -1,0 +1,387 @@
+[
+  [
+    -9.32,
+    true,
+    null
+  ],
+  [
+    -8.31,
+    true,
+    null
+  ],
+  [
+    -7.31,
+    true,
+    null
+  ],
+  [
+    -6.31,
+    true,
+    null
+  ],
+  [
+    -5.31,
+    true,
+    null
+  ],
+  [
+    -4.31,
+    true,
+    null
+  ],
+  [
+    -3.31,
+    true,
+    null
+  ],
+  [
+    -2.31,
+    true,
+    null
+  ],
+  [
+    -1.31,
+    true,
+    null
+  ],
+  [
+    -0.31,
+    true,
+    null
+  ],
+  [
+    0.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    1.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    2.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    3.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    4.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    5.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    6.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    7.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    8.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    9.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    10.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    11.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    12.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    13.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    14.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    15.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    16.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    17.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    18.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    19.69,
+    false,
+    "products: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    20.69,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    21.69,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    22.69,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    23.69,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    24.69,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    25.69,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    26.69,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    27.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    28.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    29.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    30.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    31.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    32.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    33.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    34.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    35.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    36.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    37.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    38.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    39.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    40.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    41.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    42.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    43.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    44.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    45.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    46.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    47.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    48.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    49.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    50.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    51.7,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    52.7,
+    false,
+    "recommendations: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/recommendations?productIds=6E9"
+  ],
+  [
+    53.7,
+    false,
+    "recommendations: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/recommendations?productIds=2ZY"
+  ],
+  [
+    54.7,
+    false,
+    "recommendations: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/recommendations?productIds=66V"
+  ],
+  [
+    55.7,
+    false,
+    "recommendations: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/recommendations?productIds=OLJ"
+  ],
+  [
+    56.7,
+    false,
+    "recommendations: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/recommendations?productIds=0PU"
+  ],
+  [
+    57.7,
+    true,
+    null
+  ],
+  [
+    58.7,
+    true,
+    null
+  ],
+  [
+    59.7,
+    true,
+    null
+  ],
+  [
+    60.7,
+    true,
+    null
+  ],
+  [
+    61.7,
+    true,
+    null
+  ],
+  [
+    62.7,
+    true,
+    null
+  ],
+  [
+    63.7,
+    true,
+    null
+  ],
+  [
+    64.7,
+    true,
+    null
+  ],
+  [
+    65.7,
+    true,
+    null
+  ],
+  [
+    66.7,
+    true,
+    null
+  ]
+]

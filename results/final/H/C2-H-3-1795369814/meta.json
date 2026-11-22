@@ -1,0 +1,44 @@
+{
+  "id": "C2-H-3-1795369814",
+  "fault": "C2",
+  "arm": "H",
+  "rep": 3,
+  "fault_desc": "checkout wrong payment port",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 8,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "rollout_undo",
+      "name": "checkout"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T17:50:20+00:00",
+  "impact": true,
+  "alert_s": 10.6,
+  "decision": "escalate",
+  "cause": "deployment/checkout",
+  "diagnosis": "At 17:50:20 deploy-bot set checkout env PAYMENT_ADDR to payment:9999 (checkout revision 186). The payment Service listens on port 8080, and payment pods are healthy with 0 restarts, so checkout cannot reach payment. That explains the checkout HTTP 500s and then the ReadTimeouts through frontend-proxy. rollout_undo was applied, but journeys are still 0% OK, so the rollback has not restored checkout. I did not confirm the rollback's effect: the checkout pod logs returned nothing useful and the span-metric query came back empty. A human should verify the live checkout env and pod state, and check whether the rollback rolled out or whether another cause is involved, such as frontend-proxy routing or the checkout pod's own errors.",
+  "confidence": 55,
+  "decided_s": 122.2,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.004529,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T17:52:33+00:00",
+  "total_s": 132.7,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/checkout"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

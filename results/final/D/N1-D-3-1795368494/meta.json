@@ -1,0 +1,37 @@
+{
+  "id": "N1-D-3-1795368494",
+  "fault": "N1",
+  "arm": "D",
+  "rep": 3,
+  "fault_desc": "CLIENT PAUSE on valkey-cart",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T17:28:20+00:00",
+  "impact": true,
+  "alert_s": 5.6,
+  "decision": "escalate",
+  "cause": "frontend-proxy/cart service communication failure",
+  "diagnosis": "Synthetic journeys show consistent ReadTimeout and 500 errors hitting frontend-proxy on cart endpoints. All pods are running and ready, but the cart service may be experiencing high latency or internal errors. The allowed actions (scaling, patching deployments, deleting pods) are unlikely to resolve a deeper network or application logic issue. Need human investigation into cart service logs, network connectivity, and possible dependency failures (e.g., valkey-cart).",
+  "confidence": 75,
+  "decided_s": 67.3,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.00584,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T17:29:33+00:00",
+  "total_s": 72.9,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

@@ -1,0 +1,45 @@
+{
+  "id": "N1-D-4-1795366986",
+  "fault": "N1",
+  "arm": "D",
+  "rep": 4,
+  "fault_desc": "CLIENT PAUSE on valkey-cart",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 8,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "delete_pod",
+      "name": "valkey-cart-774dc7fd9f-qvgwh"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T17:03:12+00:00",
+  "impact": true,
+  "alert_s": 6.1,
+  "decision": "fix",
+  "cause": "valkey-cart/valkey-cart-774dc7fd9f-qvgwh",
+  "diagnosis": "Cart service is timing out connecting to valkey-cart Redis instance. The Redis connection backlog is full (qu: 8-9 queued commands) with no connections available, causing cart operations to fail with RedisTimeoutException. This leads to 500 errors and timeouts in the synthetic journeys.",
+  "confidence": 85,
+  "decided_s": 56.2,
+  "fixed_s": 66.3,
+  "outcome": "FIXED",
+  "cost_usd": 0.007505,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T17:04:25+00:00",
+  "total_s": 72.4,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/valkey-cart"
+    ],
+    "innocent_writes": [],
+    "state_loss": true,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

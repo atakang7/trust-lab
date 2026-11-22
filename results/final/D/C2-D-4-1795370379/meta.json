@@ -1,0 +1,37 @@
+{
+  "id": "C2-D-4-1795370379",
+  "fault": "C2",
+  "arm": "D",
+  "rep": 4,
+  "fault_desc": "checkout wrong payment port",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T17:59:45+00:00",
+  "impact": true,
+  "alert_s": 9.6,
+  "decision": "escalate",
+  "cause": "Deployment/checkout",
+  "diagnosis": "Checkout pod recently restarted (new pod checkout-797cb78c85-d72gf created at 17:59:45, old pod killed). Synthetic journeys show checkout failing with HTTP 500 and ReadTimeout to frontend-proxy. However, current deployment shows 1 ready replica, pod is Running and Ready. No recent logs available. The error pattern suggests the new pod may have a configuration or dependency issue causing timeouts, but the allowed actions (scale, patch, delete pod) may not resolve a deeper issue like network connectivity or downstream service unavailability. Need human investigation of logs and dependencies.",
+  "confidence": 70,
+  "decided_s": 58.9,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.008808,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T18:00:53+00:00",
+  "total_s": 68.5,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

@@ -1,0 +1,37 @@
+{
+  "id": "N2-H-1-1795380939",
+  "fault": "N2",
+  "arm": "H",
+  "rep": 1,
+  "fault_desc": "SIGSTOP payment",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 14,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T20:55:46+00:00",
+  "impact": true,
+  "alert_s": 6.1,
+  "decision": "escalate",
+  "cause": "deployment/checkout (suspected: revision 239 rolled out 20:54; cause not confirmed)",
+  "diagnosis": "All 20 most recent synthetic checkout journeys fail with ReadTimeout (3s) through frontend-proxy:8080, starting around the alert time. Every pod in trust-lab is Running and Ready with zero restarts, and all Services have ready endpoints. The checkout pod (checkout-64b4f8969c-mlnhv, revision 239) became ready at 20:54:03, about 90s before the alert. Checkout's own span metrics show PlaceOrder traffic with no error status, so checkout is not visibly crashing. But frontend's POST /api/checkout and PlaceOrder counters are zero over the last 2 minutes, which suggests checkout requests stop at the frontend-proxy/frontend hop and never reach checkout. Non-checkout journeys (product, recommendations, ads, cart) still return 200. Flagd flags are all off except emitRawPii, and the change log is empty, so no recorded config change explains this. Revision 239 is the only recent change I can see, but I could not diff it against the previous revision. A rollback is not clearly justified, and the fault may be in frontend-proxy routing, which has not changed since 2026-11-18. A human should check the Envoy route for /api/checkout on frontend-proxy and the revision 239 diff.",
+  "confidence": 35,
+  "decided_s": 99.1,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.01835,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T20:57:31+00:00",
+  "total_s": 105.2,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

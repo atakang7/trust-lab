@@ -1,0 +1,362 @@
+[
+  [
+    -9.44,
+    true,
+    null
+  ],
+  [
+    -8.44,
+    true,
+    null
+  ],
+  [
+    -7.44,
+    true,
+    null
+  ],
+  [
+    -6.44,
+    true,
+    null
+  ],
+  [
+    -5.44,
+    true,
+    null
+  ],
+  [
+    -4.44,
+    true,
+    null
+  ],
+  [
+    -3.44,
+    true,
+    null
+  ],
+  [
+    -2.44,
+    true,
+    null
+  ],
+  [
+    -1.44,
+    true,
+    null
+  ],
+  [
+    -0.44,
+    true,
+    null
+  ],
+  [
+    0.56,
+    true,
+    null
+  ],
+  [
+    1.56,
+    true,
+    null
+  ],
+  [
+    2.56,
+    true,
+    null
+  ],
+  [
+    3.56,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    4.56,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    5.56,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    6.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    7.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    8.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    9.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    10.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    11.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    12.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    13.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    14.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    15.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    16.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    17.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    18.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    19.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    20.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    21.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    22.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    23.56,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    24.56,
+    false,
+    "checkout http 500 2.1s"
+  ],
+  [
+    25.56,
+    false,
+    "checkout http 500 1.1s"
+  ],
+  [
+    26.56,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    27.56,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    28.56,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    29.56,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    30.56,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    31.56,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    32.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    33.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    34.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    35.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    36.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    37.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    38.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    39.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    40.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    41.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    42.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    43.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    44.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    45.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    46.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    47.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    48.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    49.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    50.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    51.57,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    52.57,
+    true,
+    null
+  ],
+  [
+    53.57,
+    true,
+    null
+  ],
+  [
+    54.57,
+    true,
+    null
+  ],
+  [
+    55.57,
+    true,
+    null
+  ],
+  [
+    56.57,
+    true,
+    null
+  ],
+  [
+    57.57,
+    true,
+    null
+  ],
+  [
+    58.57,
+    true,
+    null
+  ],
+  [
+    59.57,
+    true,
+    null
+  ],
+  [
+    60.57,
+    true,
+    null
+  ],
+  [
+    61.57,
+    true,
+    null
+  ]
+]

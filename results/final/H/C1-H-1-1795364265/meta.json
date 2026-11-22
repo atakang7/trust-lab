@@ -1,0 +1,46 @@
+{
+  "id": "C1-H-1-1795364265",
+  "fault": "C1",
+  "arm": "H",
+  "rep": 1,
+  "fault_desc": "paymentFailure 100%",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 3,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "set_flag",
+      "flag": "paymentFailure",
+      "variant": "off"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T16:17:51+00:00",
+  "impact": true,
+  "alert_s": 2.5,
+  "decision": "fix",
+  "cause": "ConfigMap/flagd-config (flag paymentFailure)",
+  "diagnosis": "At 16:17:51 flag-admin changed the paymentFailure flag from off to 100%. Payment now rejects every charge request with 'Payment request failed. Invalid token', checkout returns HTTP 422, and 3 of the last 10 synthetic journeys failed at the checkout step, with all 20 most recent failing. Pods are all Running with no restarts, so this is an injected failure, not a crash. Reverting the flag to off should restore checkout.",
+  "confidence": 88,
+  "decided_s": 32.8,
+  "fixed_s": 43.9,
+  "outcome": "FIXED",
+  "cost_usd": 0.001833,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T16:18:38+00:00",
+  "total_s": 46.4,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "flag/paymentFailure"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

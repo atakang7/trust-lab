@@ -1,0 +1,24 @@
+# OTel Demo chart 0.42.7 (app 3.1.0) — trust-lab overrides
+components:
+  chatbot: {enabled: false}
+  agent: {enabled: false}
+  mcp: {enabled: false}
+  telemetry-docs: {enabled: false}
+  load-generator:
+    envOverrides:
+    - {name: LOCUST_USERS, value: "5"}
+
+opensearch:
+  enabled: false
+
+grafana:
+  enabled: false
+
+opentelemetry-collector:
+  config:
+    service:
+      pipelines:
+        logs:
+          exporters: [debug]
+        profiles:
+          exporters: [debug]

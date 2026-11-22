@@ -1,0 +1,46 @@
+{
+  "id": "D3-H-1-1795379914",
+  "fault": "D3",
+  "arm": "H",
+  "rep": 1,
+  "fault_desc": "unlogged cart to 0, then imageSlowLoad",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 9,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "scale",
+      "name": "cart",
+      "replicas": 1
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T20:38:41+00:00",
+  "impact": true,
+  "alert_s": 6.1,
+  "decision": "fix",
+  "cause": "deployment/cart",
+  "diagnosis": "The cart Deployment was scaled to 0 replicas about 30 s before the alert (ReplicaSet cart-78b98c8995 went 1 to 0, pod mt6zd deleted). With no ready pods, cart has no endpoints, so frontend-proxy requests to cart time out. That matches the journey failures, all on the cart step. The change log has no record of the scale-down. The only recorded change is the imageSlowLoad flag, which does not touch cart. The cart image, config, and service selector all look normal. Restoring cart to 1 replica is the smallest reversible fix.",
+  "confidence": 80,
+  "decided_s": 51.6,
+  "fixed_s": 70.0,
+  "outcome": "FIXED",
+  "cost_usd": 0.006533,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T20:39:57+00:00",
+  "total_s": 76.1,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/cart"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

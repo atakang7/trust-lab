@@ -1,0 +1,3 @@
+2026-11-22T16:41:08+00:00 DRYRUN PASS {"type": "delete_pod", "name": "cart-78b98c8995-tkk67"} :: dry-run ok
+2026-11-22T16:41:08+00:00 APPLY OK {"type": "delete_pod", "name": "cart-78b98c8995-tkk67"} :: applied
+2026-11-22T16:42:23+00:00 ROLLBACK (0% OK)

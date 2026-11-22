@@ -1,0 +1,64 @@
+{
+  "id": "D2-G-1-1795380610",
+  "fault": "D2",
+  "arm": "G",
+  "rep": 1,
+  "fault_desc": "unlogged wrong port, then benign payment release",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 4,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "patch_deployment",
+      "name": "checkout",
+      "patch": {
+        "spec": {
+          "template": {
+            "spec": {
+              "containers": [
+                {
+                  "name": "checkout",
+                  "env": [
+                    {
+                      "name": "PAYMENT_ADDR",
+                      "value": "payment:8080"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T20:50:17+00:00",
+  "impact": true,
+  "alert_s": 9.0,
+  "decision": "fix",
+  "cause": "deployment/checkout",
+  "diagnosis": "Checkout is configured to call payment:9999, but the payment service is listening on port 8080. This mismatch explains the checkout failures; update checkout\u2019s PAYMENT_ADDR to the service\u2019s actual port.",
+  "confidence": 96,
+  "decided_s": 46.4,
+  "fixed_s": 62.5,
+  "outcome": "FIXED",
+  "cost_usd": 0.003283,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T20:51:28+00:00",
+  "total_s": 71.6,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/checkout"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

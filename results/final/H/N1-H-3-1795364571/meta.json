@@ -1,0 +1,46 @@
+{
+  "id": "N1-H-3-1795364571",
+  "fault": "N1",
+  "arm": "H",
+  "rep": 3,
+  "fault_desc": "CLIENT PAUSE on valkey-cart",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 7,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "delete_pod",
+      "name": "cart-78b98c8995-546lm"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T16:22:57+00:00",
+  "impact": true,
+  "alert_s": 5.6,
+  "decision": "escalate",
+  "cause": "unconfirmed: the cart-to-valkey-cart Redis path (Deployment/cart and Deployment/valkey-cart); the pod restart did not fix it",
+  "diagnosis": "The cart service's Redis client was timing out on HGET with no response from valkey-cart:6379 (in: 0, qu: 0). Deleting cart pod cart-78b98c8995-546lm did not restore journeys: the change was rolled back and journeys are still 0% OK, so the cart pod was not the root cause. The valkey-cart pod reports Ready and its logs show only normal background saves, which points to the Valkey server or the path to it (the valkey-cart Service, node network, or the server not answering commands). I could not confirm this with the read-only tools. A human should check valkey-cart's command responsiveness (for example redis-cli PING and SLOWLOG from inside the pod), the valkey-cart Service endpoints and node networking, and whether the cart pod can reach valkey-cart from a fresh shell. This needs action outside the allowed set.",
+  "confidence": 35,
+  "decided_s": 122.6,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.006607,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T16:25:05+00:00",
+  "total_s": 128.2,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/cart"
+    ],
+    "innocent_writes": [
+      "deployment/cart"
+    ],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

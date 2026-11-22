@@ -1,0 +1,52 @@
+{
+  "id": "N1-D-1-1795378353",
+  "fault": "N1",
+  "arm": "D",
+  "rep": 1,
+  "fault_desc": "CLIENT PAUSE on valkey-cart",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "delete_pod",
+      "name": "cart-78b98c8995-8qb6l"
+    },
+    {
+      "type": "delete_pod",
+      "name": "valkey-cart-774dc7fd9f-wm58s"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T20:12:39+00:00",
+  "impact": true,
+  "alert_s": 6.1,
+  "decision": "fix",
+  "cause": "valkey-cart/valkey-cart-774dc7fd9f-wm58s",
+  "diagnosis": "Cart service is timing out connecting to Valkey cart storage (Redis-compatible). The Valkey pod shows it started recently (20:05:27) and is accepting connections, but cart service logs show RedisTimeoutException with 'no connection became available'. This suggests connection pool exhaustion or network connectivity issues between cart and valkey-cart pods.",
+  "confidence": 85,
+  "decided_s": 55.8,
+  "fixed_s": 72.0,
+  "outcome": "FIXED",
+  "cost_usd": 0.008762,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T20:13:57+00:00",
+  "total_s": 78.1,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/cart",
+      "deployment/valkey-cart"
+    ],
+    "innocent_writes": [
+      "deployment/cart"
+    ],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

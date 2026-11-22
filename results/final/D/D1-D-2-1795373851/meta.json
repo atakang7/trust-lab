@@ -1,0 +1,37 @@
+{
+  "id": "D1-D-2-1795373851",
+  "fault": "D1",
+  "arm": "D",
+  "rep": 2,
+  "fault_desc": "paymentUnreachable, then benign payment release",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T18:57:37+00:00",
+  "impact": true,
+  "alert_s": 3.0,
+  "decision": "escalate",
+  "cause": "payment service",
+  "diagnosis": "Checkout service is returning HTTP 500 errors, with traces showing failures in PaymentService/Charge calls. Payment deployment was recently updated (generation 140, revision 87) and shows ready replicas, but checkout calls to payment are failing. This suggests payment service may have an internal issue not visible via pod readiness probes, possibly related to a recent deployment change or feature flag configuration affecting payment processing.",
+  "confidence": 85,
+  "decided_s": 50.7,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.00864,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T18:58:31+00:00",
+  "total_s": 53.8,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

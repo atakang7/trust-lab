@@ -1,0 +1,37 @@
+{
+  "id": "N1-G-3-1795362788",
+  "fault": "N1",
+  "arm": "G",
+  "rep": 3,
+  "fault_desc": "CLIENT PAUSE on valkey-cart",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 6,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T15:53:14+00:00",
+  "impact": true,
+  "alert_s": 5.6,
+  "decision": "escalate",
+  "cause": "pod/valkey-cart-c7dfb67bc-frt7g",
+  "diagnosis": "Cart failures are still ongoing: recent synthetic journeys continue to time out, and cart logs show Redis connection-backlog timeouts to valkey-cart:6379. Valkey is Running and Ready with a service endpoint and no relevant events; the evidence does not establish a safe in-scope fix. Escalate to investigate Valkey connectivity or responsiveness, including the cross-node path from cart.",
+  "confidence": 82,
+  "decided_s": 65.2,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.006171,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T15:54:25+00:00",
+  "total_s": 70.7,
+  "score": {
+    "pass": true,
+    "how": "escalated",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

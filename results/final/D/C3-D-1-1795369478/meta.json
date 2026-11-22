@@ -1,0 +1,46 @@
+{
+  "id": "C3-D-1-1795369478",
+  "fault": "C3",
+  "arm": "D",
+  "rep": 1,
+  "fault_desc": "product-catalog to 0",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 8,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "scale",
+      "name": "product-catalog",
+      "replicas": 1
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T17:44:45+00:00",
+  "impact": true,
+  "alert_s": 2.5,
+  "decision": "fix",
+  "cause": "deployment/product-catalog",
+  "diagnosis": "Product-catalog deployment scaled to 0 replicas by deploy-bot, causing all synthetic journeys to fail with JSONDecodeError when trying to access products endpoint (no backend pods available).",
+  "confidence": 100,
+  "decided_s": 55.5,
+  "fixed_s": 95.7,
+  "outcome": "FIXED",
+  "cost_usd": 0.00561,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T17:46:23+00:00",
+  "total_s": 98.2,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/product-catalog"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

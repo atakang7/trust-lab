@@ -1,0 +1,6 @@
+2026-11-22T16:37:21+00:00 DRYRUN PASS {"type": "delete_pod", "name": "checkout-64b4f8969c-qxvwd"} :: dry-run ok
+2026-11-22T16:37:21+00:00 APPLY OK {"type": "delete_pod", "name": "checkout-64b4f8969c-qxvwd"} :: applied
+2026-11-22T16:38:36+00:00 ROLLBACK (0% OK)
+2026-11-22T16:38:36+00:00 DRYRUN PASS {"type": "delete_pod", "name": "checkout-64b4f8969c-9pfhg"} :: dry-run ok
+2026-11-22T16:38:36+00:00 APPLY OK {"type": "delete_pod", "name": "checkout-64b4f8969c-9pfhg"} :: applied
+2026-11-22T16:39:51+00:00 ROLLBACK (0% OK)

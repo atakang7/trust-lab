@@ -1,0 +1,37 @@
+{
+  "id": "Z1-D-3-1795378291",
+  "fault": "Z1",
+  "arm": "D",
+  "rep": 3,
+  "fault_desc": "cart pod deleted, heals",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T20:11:37+00:00",
+  "impact": true,
+  "alert_s": 2.5,
+  "decision": "no_action",
+  "cause": "none",
+  "diagnosis": "The alert fired 25 seconds ago for cart errors in synthetic journeys, but current investigation shows all pods are running and ready, recent journeys are all successful, and cart logs show normal operations. The system appears to have self-recovered after a pod restart event (cart-78b98c8995-wslqd was killed and replaced with cart-78b98c8995-8qb6l). No ongoing errors detected in current metrics or logs.",
+  "confidence": 85,
+  "decided_s": 47.7,
+  "outcome": "NO_ACTION",
+  "cost_usd": 0.008371,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T20:12:27+00:00",
+  "total_s": 50.3,
+  "score": {
+    "pass": true,
+    "how": "held",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

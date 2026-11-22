@@ -1,0 +1,46 @@
+{
+  "id": "D3-D-1-1795366869",
+  "fault": "D3",
+  "arm": "D",
+  "rep": 1,
+  "fault_desc": "unlogged cart to 0, then imageSlowLoad",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 7,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "scale",
+      "name": "cart",
+      "replicas": 1
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T17:01:15+00:00",
+  "impact": true,
+  "alert_s": 6.1,
+  "decision": "fix",
+  "cause": "deployment/cart",
+  "diagnosis": "Cart deployment scaled to 0 replicas, causing all cart service requests to fail. Synthetic journeys timeout at frontend-proxy because cart service is unavailable, leading to cascading failures in the shopping flow.",
+  "confidence": 95,
+  "decided_s": 54.3,
+  "fixed_s": 98.4,
+  "outcome": "FIXED",
+  "cost_usd": 0.006216,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T17:03:00+00:00",
+  "total_s": 104.5,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/cart"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

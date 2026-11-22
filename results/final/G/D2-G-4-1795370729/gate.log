@@ -1,0 +1,6 @@
+2026-11-22T18:06:26+00:00 DRYRUN PASS {"type": "patch_deployment", "name": "checkout", "patch": {"spec": {"template": {"spec": {"containers": [{"name": "checkout", "env": [{"name": "PAYMENT_ADDR", "value": "payment:8080"}]}]}}}}} :: dry-run ok
+2026-11-22T18:06:26+00:00 APPLY OK {"type": "patch_deployment", "name": "checkout", "patch": {"spec": {"template": {"spec": {"containers": [{"name": "checkout", "env": [{"name": "PAYMENT_ADDR", "value": "payment:8080"}]}]}}}}} :: applied
+2026-11-22T18:07:41+00:00 ROLLBACK (0% OK)
+2026-11-22T18:07:49+00:00 DRYRUN PASS {"type": "rollout_undo", "name": "payment"} :: dry-run ok
+2026-11-22T18:07:49+00:00 APPLY OK {"type": "rollout_undo", "name": "payment"} :: applied
+2026-11-22T18:09:04+00:00 ROLLBACK (0% OK)

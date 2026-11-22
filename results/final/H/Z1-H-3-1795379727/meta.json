@@ -1,0 +1,37 @@
+{
+  "id": "Z1-H-3-1795379727",
+  "fault": "Z1",
+  "arm": "H",
+  "rep": 3,
+  "fault_desc": "cart pod deleted, heals",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 4,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T20:35:33+00:00",
+  "impact": true,
+  "alert_s": 5.6,
+  "decision": "no_action",
+  "cause": "none",
+  "diagnosis": "Transient cart outage. The cart pod cart-78b98c8995-j6z4g was killed and replaced by cart-78b98c8995-x2xgn, created at 20:35:33 and Ready at 20:35:37, just before the alert at 20:35:38. The new pod's wait-for-valkey-cart init container completed, and the cart container runs with 0 restarts. The cart deployment reports available with 1/1 ready replicas and endpoints show 1 ready address. All 20 most recent synthetic journeys succeeded, and the cart logs show normal AddItem/GetCart/EmptyCart traffic. No deploy or config change was recorded in the last 60 minutes. The 3 cart timeouts were likely requests that hit the pod during its replacement. I found no evidence of a persistent fault. The pod kill reason was not visible in events, so it is worth a look if it recurs.",
+  "confidence": 80,
+  "decided_s": 35.3,
+  "outcome": "NO_ACTION",
+  "cost_usd": 0.002273,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T20:36:14+00:00",
+  "total_s": 40.8,
+  "score": {
+    "pass": true,
+    "how": "held",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

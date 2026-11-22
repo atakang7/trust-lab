@@ -1,0 +1,372 @@
+[
+  [
+    -9.54,
+    true,
+    null
+  ],
+  [
+    -8.54,
+    true,
+    null
+  ],
+  [
+    -7.54,
+    true,
+    null
+  ],
+  [
+    -6.54,
+    true,
+    null
+  ],
+  [
+    -5.54,
+    true,
+    null
+  ],
+  [
+    -4.54,
+    true,
+    null
+  ],
+  [
+    -3.54,
+    true,
+    null
+  ],
+  [
+    -2.54,
+    true,
+    null
+  ],
+  [
+    -1.54,
+    true,
+    null
+  ],
+  [
+    -0.54,
+    true,
+    null
+  ],
+  [
+    0.46,
+    false,
+    "products: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/products/66VCHSJNUP"
+  ],
+  [
+    1.46,
+    false,
+    "products: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/products/9SIQT8TOJO"
+  ],
+  [
+    2.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    3.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    4.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    5.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    6.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    7.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    8.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    9.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    10.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    11.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    12.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    13.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    14.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    15.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    16.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    17.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    18.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    19.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    20.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    21.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    22.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    23.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    24.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    25.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    26.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    27.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    28.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    29.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    30.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    31.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    32.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    33.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    34.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    35.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    36.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    37.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    38.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    39.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    40.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    41.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    42.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    43.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    44.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    45.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    46.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    47.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    48.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    49.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    50.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    51.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    52.46,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    53.47,
+    false,
+    "products: JSONDecodeError Expecting value: line 1 column 1 (char 0)"
+  ],
+  [
+    54.47,
+    true,
+    null
+  ],
+  [
+    55.47,
+    true,
+    null
+  ],
+  [
+    56.47,
+    true,
+    null
+  ],
+  [
+    57.47,
+    true,
+    null
+  ],
+  [
+    58.47,
+    true,
+    null
+  ],
+  [
+    59.47,
+    true,
+    null
+  ],
+  [
+    60.47,
+    true,
+    null
+  ],
+  [
+    61.47,
+    true,
+    null
+  ],
+  [
+    62.47,
+    true,
+    null
+  ],
+  [
+    63.47,
+    true,
+    null
+  ]
+]

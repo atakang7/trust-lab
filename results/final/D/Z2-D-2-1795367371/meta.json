@@ -1,0 +1,37 @@
+{
+  "id": "Z2-D-2-1795367371",
+  "fault": "Z2",
+  "arm": "D",
+  "rep": 2,
+  "fault_desc": "benign release plus false alert",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T17:09:37+00:00",
+  "impact": false,
+  "alert_s": 17.1,
+  "decision": "no_action",
+  "cause": "none",
+  "diagnosis": "Alert fired for product-catalog latency but current synthetic journeys show 20/20 successful (100%). Latency metrics show p95 for GetProduct is 43.7ms (maybe elevated but not critical) and database latency is low (7.3ms). Deployment recently rolled out new replica set (revision 22) at 17:09:42, just before alert. No errors in logs. System appears healthy now; alert may have been transient during rollout.",
+  "confidence": 85,
+  "decided_s": 52.4,
+  "outcome": "NO_ACTION",
+  "cost_usd": 0.007958,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T17:10:46+00:00",
+  "total_s": 69.6,
+  "score": {
+    "pass": true,
+    "how": "held",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

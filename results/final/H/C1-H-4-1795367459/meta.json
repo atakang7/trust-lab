@@ -1,0 +1,46 @@
+{
+  "id": "C1-H-4-1795367459",
+  "fault": "C1",
+  "arm": "H",
+  "rep": 4,
+  "fault_desc": "paymentFailure 100%",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 3,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "set_flag",
+      "flag": "paymentFailure",
+      "variant": "off"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T17:11:05+00:00",
+  "impact": true,
+  "alert_s": 3.0,
+  "decision": "fix",
+  "cause": "ConfigMap/flagd-config (flag paymentFailure, defaultVariant set to 100%)",
+  "diagnosis": "Synthetic checkout journeys fail 100% with http 422 starting about 17:11:05. The change log shows flag-admin changed paymentFailure from off to 100% at 17:11:05. Payment logs show every charge request failing with 'Payment request failed. Invalid token', which matches the injected paymentFailure fault. Checkout surfaces this as 422. Other journey steps are unaffected. Fix: set paymentFailure back to off.",
+  "confidence": 88,
+  "decided_s": 33.3,
+  "fixed_s": 43.4,
+  "outcome": "FIXED",
+  "cost_usd": 0.00197,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T17:11:51+00:00",
+  "total_s": 46.4,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "flag/paymentFailure"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

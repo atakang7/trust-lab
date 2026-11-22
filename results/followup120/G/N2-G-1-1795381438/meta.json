@@ -1,0 +1,37 @@
+{
+  "id": "N2-G-1-1795381438",
+  "fault": "N2",
+  "arm": "G",
+  "rep": 1,
+  "fault_desc": "SIGSTOP payment",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T21:04:04+00:00",
+  "impact": true,
+  "alert_s": 6.1,
+  "decision": "escalate",
+  "cause": "payment/deployment",
+  "diagnosis": "Checkout failures are ongoing, not recovered: synthetic journeys continue to time out, and telemetry shows PaymentService/Charge failing at a high rate with roughly 15-second p95 latency. The payment pod is Running and Ready, its endpoint exists, and the payment failure/unreachable flag defaults are off. The payment pod was recently recreated, but failures persist, so another restart is not a supported, evidence-based fix; investigate the payment service/backend beyond the available actions.",
+  "confidence": 87,
+  "decided_s": 92.3,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.009815,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T21:05:42+00:00",
+  "total_s": 98.4,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

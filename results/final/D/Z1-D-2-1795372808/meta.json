@@ -1,0 +1,37 @@
+{
+  "id": "Z1-D-2-1795372808",
+  "fault": "Z1",
+  "arm": "D",
+  "rep": 2,
+  "fault_desc": "cart pod deleted, heals",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T18:40:13+00:00",
+  "impact": true,
+  "alert_s": 6.0,
+  "decision": "escalate",
+  "cause": "frontend-proxy/frontend-proxy-656c5d86d7-mk77h",
+  "diagnosis": "All pods are running and ready, but synthetic journeys consistently fail at cart step with ReadTimeout to frontend-proxy. The frontend-proxy logs show only startup messages from Nov 18, suggesting it may be stuck or not processing requests properly. No recent changes recorded, but cart pod was recently replaced (killed). The timeout suggests frontend-proxy is not responding within 3 seconds, possibly due to resource constraints, deadlock, or misconfiguration. Need deeper inspection of frontend-proxy's current request handling and resource usage, which is outside allowed actions.",
+  "confidence": 75,
+  "decided_s": 53.6,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.008332,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T18:41:12+00:00",
+  "total_s": 59.7,
+  "score": {
+    "pass": false,
+    "how": "wrong_decision",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

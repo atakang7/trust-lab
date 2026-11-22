@@ -1,0 +1,37 @@
+{
+  "id": "Z2-H-4-1795378994",
+  "fault": "Z2",
+  "arm": "H",
+  "rep": 4,
+  "fault_desc": "benign release plus false alert",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 8,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T20:23:20+00:00",
+  "impact": false,
+  "alert_s": 17.1,
+  "decision": "no_action",
+  "cause": "none",
+  "diagnosis": "The alert fired about 3 seconds after deployment/product-catalog rolled to 1.8.3 (ci-bot, 20:23:20). The new pod is Running and Ready with 0 restarts, and the endpoint has 1 ready address. Product-catalog p95 latency is about 34 ms over 5m, compared with about 36 ms for the same window an hour earlier, so there is no latency regression. The span status shows 0 ERROR calls. All 20 of 20 synthetic shopper journeys passed, including the 10 s before the alert. The 1m PromQL queries returned empty because the new pod has only seconds of data. The alert looks like a transient spike during the rollout, and it has not recurred. Watch the 1.8.3 p95 for a few more minutes, since that is the only residual risk.",
+  "confidence": 75,
+  "decided_s": 45.8,
+  "outcome": "NO_ACTION",
+  "cost_usd": 0.003639,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T20:24:23+00:00",
+  "total_s": 63.0,
+  "score": {
+    "pass": true,
+    "how": "held",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

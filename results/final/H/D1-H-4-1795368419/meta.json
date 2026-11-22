@@ -1,0 +1,46 @@
+{
+  "id": "D1-H-4-1795368419",
+  "fault": "D1",
+  "arm": "H",
+  "rep": 4,
+  "fault_desc": "paymentUnreachable, then benign payment release",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 8,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "set_flag",
+      "flag": "paymentUnreachable",
+      "variant": "off"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T17:27:06+00:00",
+  "impact": true,
+  "alert_s": 3.1,
+  "decision": "fix",
+  "cause": "configmap/flagd-config (flag paymentUnreachable defaultVariant=on, set by flag-admin at 17:27:06)",
+  "diagnosis": "At 17:27:06 flag-admin switched the flagd flag paymentUnreachable from off to on. Two seconds later ci-bot rolled deployment/payment to release 1.8.3 (revision 57). Checkout calls to payment now fail, so every synthetic checkout returns HTTP 500 (0 of the last 20 journeys succeeded, while the other steps are fine). The payment pod is Running and Ready and its logs show no errors of its own, which points to the injected flag as the cause rather than the release. Reverting the flag to off should restore checkout. If journeys stay red after the flag is off, the 1.8.3 release becomes the next suspect and should be rolled back.",
+  "confidence": 75,
+  "decided_s": 46.0,
+  "fixed_s": 56.0,
+  "outcome": "FIXED",
+  "cost_usd": 0.00343,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T17:28:05+00:00",
+  "total_s": 59.1,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "flag/paymentUnreachable"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

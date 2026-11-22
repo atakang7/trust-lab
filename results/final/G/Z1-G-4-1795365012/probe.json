@@ -1,0 +1,362 @@
+[
+  [
+    -9.35,
+    true,
+    null
+  ],
+  [
+    -8.35,
+    true,
+    null
+  ],
+  [
+    -7.35,
+    true,
+    null
+  ],
+  [
+    -6.35,
+    true,
+    null
+  ],
+  [
+    -5.35,
+    true,
+    null
+  ],
+  [
+    -4.35,
+    true,
+    null
+  ],
+  [
+    -3.35,
+    true,
+    null
+  ],
+  [
+    -2.35,
+    true,
+    null
+  ],
+  [
+    -1.35,
+    true,
+    null
+  ],
+  [
+    -0.35,
+    true,
+    null
+  ],
+  [
+    0.65,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    1.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    2.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    3.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    4.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    5.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    6.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    7.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    8.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    9.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    10.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    11.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    12.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    13.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    14.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    15.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    16.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    17.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    18.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    19.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    20.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    21.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    22.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    23.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    24.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    25.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    26.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    27.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    28.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    29.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    30.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    31.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    32.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    33.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    34.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    35.66,
+    false,
+    "cart: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    36.66,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    37.66,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    38.66,
+    false,
+    "cart: HTTPError 500 Server Error: Internal Server Error for url: http://frontend-proxy.trust-lab:8080/api/cart"
+  ],
+  [
+    39.66,
+    true,
+    null
+  ],
+  [
+    40.66,
+    true,
+    null
+  ],
+  [
+    41.66,
+    true,
+    null
+  ],
+  [
+    42.66,
+    true,
+    null
+  ],
+  [
+    43.66,
+    true,
+    null
+  ],
+  [
+    44.66,
+    true,
+    null
+  ],
+  [
+    45.66,
+    true,
+    null
+  ],
+  [
+    46.66,
+    true,
+    null
+  ],
+  [
+    47.66,
+    true,
+    null
+  ],
+  [
+    48.66,
+    true,
+    null
+  ],
+  [
+    49.66,
+    true,
+    null
+  ],
+  [
+    50.66,
+    true,
+    null
+  ],
+  [
+    51.66,
+    true,
+    null
+  ],
+  [
+    52.66,
+    true,
+    null
+  ],
+  [
+    53.66,
+    true,
+    null
+  ],
+  [
+    54.67,
+    true,
+    null
+  ],
+  [
+    55.67,
+    true,
+    null
+  ],
+  [
+    56.67,
+    true,
+    null
+  ],
+  [
+    57.67,
+    true,
+    null
+  ],
+  [
+    58.67,
+    true,
+    null
+  ],
+  [
+    59.67,
+    true,
+    null
+  ],
+  [
+    60.67,
+    true,
+    null
+  ],
+  [
+    61.67,
+    true,
+    null
+  ]
+]

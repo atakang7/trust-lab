@@ -1,0 +1,46 @@
+{
+  "id": "D1-H-3-1795366066",
+  "fault": "D1",
+  "arm": "H",
+  "rep": 3,
+  "fault_desc": "paymentUnreachable, then benign payment release",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 7,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "set_flag",
+      "flag": "paymentUnreachable",
+      "variant": "off"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T16:47:53+00:00",
+  "impact": true,
+  "alert_s": 3.1,
+  "decision": "fix",
+  "cause": "configmap/flagd-config",
+  "diagnosis": "Checkout is failing 100% (journeys 0-19 all checkout http 500). At 16:47:53, three seconds before the alert, flag-admin switched the flagd flag paymentUnreachable from off to on, and flagd-config now has defaultVariant 'on' for it. The payment service is reported unavailable, so checkout's calls to payment fail. This happened outside the normal release process, and the ci-bot release of payment 1.8.3 at 16:47:55 is a coincident change, not the evident cause: the payment pod logs show a normal gRPC start, and the only error is a MetadataLookupWarning. The fix is to revert the flag to off. I could not apply the set_flag tool call (it returned an error and no such tool is available to me), so the action is proposed for the controller. After the revert, the journeys should return to OK. If they don't, the 1.8.3 payment release is the next suspect and should be rolled back.",
+  "confidence": 80,
+  "decided_s": 41.2,
+  "fixed_s": 51.2,
+  "outcome": "FIXED",
+  "cost_usd": 0.003047,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T16:48:47+00:00",
+  "total_s": 54.3,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "flag/paymentUnreachable"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

@@ -1,0 +1,37 @@
+{
+  "id": "E1-G-3-1795369687",
+  "fault": "E1",
+  "arm": "G",
+  "rep": 3,
+  "fault_desc": "deny-ingress NetworkPolicy on payment, pod reconnects",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 7,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T17:48:14+00:00",
+  "impact": true,
+  "alert_s": 2.6,
+  "decision": "escalate",
+  "cause": "networkpolicy/payment-ingress",
+  "diagnosis": "Checkout is returning persistent HTTP 500s, with telemetry showing errors on calls to payment Charge. A newly created ingress NetworkPolicy selects the payment pods and has no ingress allow rules, which denies checkout-to-payment traffic. NetworkPolicies cannot be changed using the allowed actions; a human must remove or correct this policy.",
+  "confidence": 96,
+  "decided_s": 64.2,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.005965,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T17:49:20+00:00",
+  "total_s": 66.8,
+  "score": {
+    "pass": true,
+    "how": "escalated",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

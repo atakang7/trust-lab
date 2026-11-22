@@ -1,0 +1,63 @@
+{
+  "id": "C2-G-4-1795371292",
+  "fault": "C2",
+  "arm": "G",
+  "rep": 4,
+  "fault_desc": "checkout wrong payment port",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 5,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "patch_deployment",
+      "name": "checkout",
+      "patch": {
+        "spec": {
+          "template": {
+            "spec": {
+              "containers": [
+                {
+                  "name": "checkout",
+                  "env": [
+                    {
+                      "name": "PAYMENT_ADDR",
+                      "value": "payment:8080"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T18:14:58+00:00",
+  "impact": true,
+  "alert_s": 9.5,
+  "decision": "escalate",
+  "cause": "deployment/checkout",
+  "diagnosis": "Checkout journeys remain at 0% OK after the PAYMENT_ADDR correction was rolled back. The checkout deployment is still implicated by the recent environment change, but without current state or evidence that the corrected address resolved the failure, another change would be unsafe. Have a human inspect the active checkout configuration and downstream payment errors.",
+  "confidence": 78,
+  "decided_s": 121.1,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.002819,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T18:17:09+00:00",
+  "total_s": 130.7,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/checkout"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

@@ -1,0 +1,46 @@
+{
+  "id": "C3-G-3-1795364849",
+  "fault": "C3",
+  "arm": "G",
+  "rep": 3,
+  "fault_desc": "product-catalog to 0",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 3,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "scale",
+      "name": "product-catalog",
+      "replicas": 1
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T16:27:35+00:00",
+  "impact": true,
+  "alert_s": 2.5,
+  "decision": "fix",
+  "cause": "deployment/product-catalog",
+  "diagnosis": "The product-catalog Deployment was scaled from 1 replica to 0 by deploy-bot shortly before the alert. It has no ready pods or service endpoints, which explains the products JSON decode failures. Journeys are still failing, so restore one replica.",
+  "confidence": 99,
+  "decided_s": 35.3,
+  "fixed_s": 61.4,
+  "outcome": "FIXED",
+  "cost_usd": 0.001287,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T16:28:39+00:00",
+  "total_s": 64.0,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/product-catalog"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

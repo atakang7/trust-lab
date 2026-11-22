@@ -1,0 +1,50 @@
+{
+  "id": "E1-script-1-1795364053",
+  "fault": "E1",
+  "arm": "script",
+  "rep": 1,
+  "fault_desc": "deny-ingress NetworkPolicy on payment, pod reconnects",
+  "model": "script",
+  "llm_calls": 0,
+  "attempts": 2,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "delete_pod",
+      "name": "checkout-64b4f8969c-hfz6p"
+    },
+    {
+      "type": "delete_pod",
+      "name": "checkout-64b4f8969c-62cnb"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T16:14:19+00:00",
+  "impact": true,
+  "alert_s": 3.1,
+  "decision": "fix",
+  "cause": "deployment/checkout",
+  "diagnosis": null,
+  "confidence": null,
+  "decided_s": 100.1,
+  "outcome": "TIMEOUT",
+  "cost_usd": 0,
+  "served": [],
+  "end": "2026-11-22T16:17:17+00:00",
+  "total_s": 178.3,
+  "score": {
+    "pass": false,
+    "how": "acted",
+    "writes": [
+      "deployment/checkout",
+      "deployment/checkout"
+    ],
+    "innocent_writes": [
+      "deployment/checkout",
+      "deployment/checkout"
+    ],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

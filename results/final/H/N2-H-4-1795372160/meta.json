@@ -1,0 +1,37 @@
+{
+  "id": "N2-H-4-1795372160",
+  "fault": "N2",
+  "arm": "H",
+  "rep": 4,
+  "fault_desc": "SIGSTOP payment",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T18:29:26+00:00",
+  "impact": true,
+  "alert_s": 7.6,
+  "decision": "escalate",
+  "cause": "none",
+  "diagnosis": "Checkout is failing end to end. Synthetic checkout journeys have timed out for about 20 consecutive attempts, so this is ongoing, not recovered. The checkout pod is Ready with 0 restarts, its endpoints are healthy, and its own PlaceOrder p95 is about 48 ms with no error spans. Payment is handling charges normally. Frontend and frontend-proxy record POST /api/checkout and PlaceOrder errors at roughly 0.3-0.5/s, while checkout records almost no PlaceOrder calls, so requests appear to be lost between frontend-proxy and checkout. The current checkout pod was created at 18:28:59, shortly before the alert, although the deployment spec was last changed at 16:59 and no changes were logged. Kafka logs show only routine metadata cleanup. I could not confirm the exact failing hop or find a specific allowed fix, so I am escalating rather than guessing.",
+  "confidence": 35,
+  "decided_s": 58.2,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.011121,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T18:30:32+00:00",
+  "total_s": 65.8,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

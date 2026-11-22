@@ -1,0 +1,32 @@
+{
+  "id": "D2-none-1-1795360975",
+  "fault": "D2",
+  "arm": "none",
+  "rep": 1,
+  "fault_desc": "unlogged wrong port, then benign payment release",
+  "model": "none",
+  "llm_calls": 0,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T15:23:02+00:00",
+  "impact": true,
+  "alert_s": 8.5,
+  "outcome": "STILL_BROKEN",
+  "decision": "no_action",
+  "cause": "none",
+  "cost_usd": 0,
+  "served": [],
+  "end": "2026-11-22T15:25:25+00:00",
+  "total_s": 143.5,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

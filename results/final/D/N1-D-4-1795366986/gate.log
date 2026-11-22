@@ -1,0 +1,2 @@
+2026-11-22T17:04:15+00:00 DRYRUN PASS {"type": "delete_pod", "name": "valkey-cart-774dc7fd9f-qvgwh"} :: dry-run ok
+2026-11-22T17:04:15+00:00 APPLY OK {"type": "delete_pod", "name": "valkey-cart-774dc7fd9f-qvgwh"} :: applied

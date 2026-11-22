@@ -1,0 +1,242 @@
+[
+  [
+    -9.65,
+    true,
+    null
+  ],
+  [
+    -8.65,
+    true,
+    null
+  ],
+  [
+    -7.65,
+    true,
+    null
+  ],
+  [
+    -6.65,
+    true,
+    null
+  ],
+  [
+    -5.65,
+    true,
+    null
+  ],
+  [
+    -4.65,
+    true,
+    null
+  ],
+  [
+    -3.65,
+    true,
+    null
+  ],
+  [
+    -2.65,
+    true,
+    null
+  ],
+  [
+    -1.65,
+    true,
+    null
+  ],
+  [
+    -0.65,
+    true,
+    null
+  ],
+  [
+    0.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    1.35,
+    false,
+    "checkout http 422 0.1s"
+  ],
+  [
+    2.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    3.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    4.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    5.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    6.35,
+    false,
+    "checkout http 422 0.1s"
+  ],
+  [
+    7.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    8.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    9.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    10.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    11.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    12.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    13.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    14.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    15.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    16.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    17.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    18.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    19.35,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    20.36,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    21.36,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    22.36,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    23.36,
+    false,
+    "checkout http 422 0.1s"
+  ],
+  [
+    24.36,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    25.36,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    26.36,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    27.36,
+    false,
+    "checkout http 422 0.0s"
+  ],
+  [
+    28.36,
+    true,
+    null
+  ],
+  [
+    29.36,
+    true,
+    null
+  ],
+  [
+    30.36,
+    true,
+    null
+  ],
+  [
+    31.36,
+    true,
+    null
+  ],
+  [
+    32.36,
+    true,
+    null
+  ],
+  [
+    33.36,
+    true,
+    null
+  ],
+  [
+    34.36,
+    true,
+    null
+  ],
+  [
+    35.36,
+    true,
+    null
+  ],
+  [
+    36.36,
+    true,
+    null
+  ],
+  [
+    37.36,
+    true,
+    null
+  ]
+]

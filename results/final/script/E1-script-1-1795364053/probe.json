@@ -1,0 +1,942 @@
+[
+  [
+    -9.02,
+    true,
+    null
+  ],
+  [
+    -8.02,
+    true,
+    null
+  ],
+  [
+    -7.02,
+    true,
+    null
+  ],
+  [
+    -6.02,
+    true,
+    null
+  ],
+  [
+    -5.02,
+    true,
+    null
+  ],
+  [
+    -4.02,
+    true,
+    null
+  ],
+  [
+    -3.02,
+    true,
+    null
+  ],
+  [
+    -2.02,
+    true,
+    null
+  ],
+  [
+    -1.02,
+    true,
+    null
+  ],
+  [
+    -0.02,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    0.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    1.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    2.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    3.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    4.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    5.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    6.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    7.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    8.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    9.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    10.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    11.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    12.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    13.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    14.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    15.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    16.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    17.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    18.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    19.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    20.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    21.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    22.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    23.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    24.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    25.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    26.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    27.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    28.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    29.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    30.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    31.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    32.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    33.99,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    34.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    35.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    36.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    37.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    38.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    39.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    40.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    41.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    42.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    43.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    44.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    45.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    46.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    47.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    48.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    49.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    50.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    51.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    52.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    53.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    54.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    55.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    56.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    57.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    58.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    59.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    60.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    61.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    62.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    63.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    64.99,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    65.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    66.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    67.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    68.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    69.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    70.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    71.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    72.99,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    74.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    75.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    76.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    77.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    78.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    79.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    80.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    81.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    82.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    83.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    84.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    85.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    86.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    87.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    88.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    89.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    90.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    91.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    92.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    93.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    94.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    95.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    96.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    97.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    98.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    99.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    100.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    101.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    102.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    103.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    104.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    105.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    106.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    107.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    108.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    109.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    110.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    111.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    112.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    113.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    114.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    115.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    116.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    117.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    118.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    119.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    120.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    121.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    122.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    123.0,
+    false,
+    "checkout: ReadTimeout HTTPConnectionPool(host='frontend-proxy.trust-lab', port=8080): Read timed out. (read timeout=3)"
+  ],
+  [
+    124.0,
+    false,
+    "checkout http 500 2.7s"
+  ],
+  [
+    125.0,
+    false,
+    "checkout http 500 1.7s"
+  ],
+  [
+    126.0,
+    false,
+    "checkout http 500 0.7s"
+  ],
+  [
+    127.0,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    128.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    129.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    130.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    131.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    132.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    133.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    134.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    135.0,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    136.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    137.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    138.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    139.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    140.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    141.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    142.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    143.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    144.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    145.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    146.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    147.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    148.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    149.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    150.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    151.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    152.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    153.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    154.0,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    155.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    156.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    157.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    158.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    159.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    160.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    161.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    162.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    163.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    164.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    165.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    166.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    167.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    168.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    169.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    170.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    171.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    172.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    173.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    174.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    175.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    176.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    177.01,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    178.01,
+    false,
+    "checkout http 500 0.0s"
+  ]
+]

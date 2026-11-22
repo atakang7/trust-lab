@@ -1,0 +1,32 @@
+{
+  "id": "Z2-none-1-1795362066",
+  "fault": "Z2",
+  "arm": "none",
+  "rep": 1,
+  "fault_desc": "benign release plus false alert",
+  "model": "none",
+  "llm_calls": 0,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T15:41:12+00:00",
+  "impact": false,
+  "alert_s": 37.1,
+  "outcome": "SELF_HEALED",
+  "decision": "no_action",
+  "cause": "none",
+  "cost_usd": 0,
+  "served": [],
+  "end": "2026-11-22T15:44:04+00:00",
+  "total_s": 172.1,
+  "score": {
+    "pass": true,
+    "how": "held",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

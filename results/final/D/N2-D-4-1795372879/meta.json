@@ -1,0 +1,37 @@
+{
+  "id": "N2-D-4-1795372879",
+  "fault": "N2",
+  "arm": "D",
+  "rep": 4,
+  "fault_desc": "SIGSTOP payment",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T18:41:24+00:00",
+  "impact": true,
+  "alert_s": 6.9,
+  "decision": "escalate",
+  "cause": "frontend-proxy-656c5d86d7-mk77h",
+  "diagnosis": "Frontend-proxy pod shows it started on Nov 18 and logs indicate it shut down at 22:16:16 that day, but pod status shows running. This suggests the container may be hung or dead but Kubernetes hasn't detected it. Synthetic journeys are failing with ReadTimeout to frontend-proxy:8080, indicating the proxy is not accepting connections despite showing ready.",
+  "confidence": 85,
+  "decided_s": 53.8,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.008629,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T18:42:25+00:00",
+  "total_s": 60.7,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

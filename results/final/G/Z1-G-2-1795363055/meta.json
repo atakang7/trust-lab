@@ -1,0 +1,37 @@
+{
+  "id": "Z1-G-2-1795363055",
+  "fault": "Z1",
+  "arm": "G",
+  "rep": 2,
+  "fault_desc": "cart pod deleted, heals",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 6,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T15:57:41+00:00",
+  "impact": true,
+  "alert_s": 6.0,
+  "decision": "escalate",
+  "cause": "deployment/cart",
+  "diagnosis": "Cart journeys are still timing out despite a newly started, Ready cart pod. The cart logs show a successful Valkey connection, and its Service has a ready endpoint, so another blind restart is not justified. Frontend-proxy GET latency is around the 3-second timeout threshold, but available evidence does not isolate whether the remaining stall is in cart, Valkey, or the proxy-to-cart path; human trace-level investigation is needed before changing anything.",
+  "confidence": 78,
+  "decided_s": 69.3,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.004933,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T15:58:56+00:00",
+  "total_s": 75.3,
+  "score": {
+    "pass": false,
+    "how": "wrong_decision",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

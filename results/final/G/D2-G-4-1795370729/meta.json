@@ -1,0 +1,70 @@
+{
+  "id": "D2-G-4-1795370729",
+  "fault": "D2",
+  "arm": "G",
+  "rep": 4,
+  "fault_desc": "unlogged wrong port, then benign payment release",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 5,
+  "attempts": 2,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "patch_deployment",
+      "name": "checkout",
+      "patch": {
+        "spec": {
+          "template": {
+            "spec": {
+              "containers": [
+                {
+                  "name": "checkout",
+                  "env": [
+                    {
+                      "name": "PAYMENT_ADDR",
+                      "value": "payment:8080"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "rollout_undo",
+      "name": "payment"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T18:05:35+00:00",
+  "impact": true,
+  "alert_s": 8.6,
+  "decision": "fix",
+  "cause": "deployment/payment",
+  "diagnosis": "The checkout port change did not restore journeys and was rolled back. The payment deployment of release 1.8.3 immediately preceded the incident, making it the strongest identified cause; roll it back to the previous revision.",
+  "confidence": 78,
+  "decided_s": 125.6,
+  "outcome": "TIMEOUT",
+  "cost_usd": 0.003423,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T18:09:04+00:00",
+  "total_s": 209.5,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/checkout",
+      "deployment/payment"
+    ],
+    "innocent_writes": [
+      "deployment/payment"
+    ],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

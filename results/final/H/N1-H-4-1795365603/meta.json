@@ -1,0 +1,46 @@
+{
+  "id": "N1-H-4-1795365603",
+  "fault": "N1",
+  "arm": "H",
+  "rep": 4,
+  "fault_desc": "CLIENT PAUSE on valkey-cart",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 9,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "delete_pod",
+      "name": "cart-78b98c8995-tkk67"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T16:40:09+00:00",
+  "impact": true,
+  "alert_s": 6.1,
+  "decision": "escalate",
+  "cause": "deployment/cart",
+  "diagnosis": "The cart pod restart did not fix the failure, and the change was rolled back. Journeys are still 0% OK. Cart's StackExchange.Redis client keeps timing out on HGET with 'no connection became available' while valkey-cart:6379 is Running and Ready with 0 restarts. A fresh cart pod (tkk67, created 16:34:58) reproduces the same failure, so the fault is not a stale client connection. The Valkey server log is clean. The valkey-cart deployment has a 20Mi memory limit with no requests set, and I did not verify whether that or the cart-to-Valkey network path is the cause. No deploy or flag change is recorded and cartFailure is off. A human needs to check valkey-cart resource limits and connectivity from cart to valkey-cart:6379, and check Valkey's live state with CLIENT LIST and INFO, before retrying.",
+  "confidence": 40,
+  "decided_s": 131.4,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.008145,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T16:42:27+00:00",
+  "total_s": 137.5,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/cart"
+    ],
+    "innocent_writes": [
+      "deployment/cart"
+    ],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

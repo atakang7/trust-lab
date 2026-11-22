@@ -1,0 +1,6 @@
+2026-11-22T16:58:28+00:00 DRYRUN PASS {"type": "rollout_undo", "name": "payment"} :: dry-run ok
+2026-11-22T16:58:29+00:00 APPLY OK {"type": "rollout_undo", "name": "payment"} :: applied
+2026-11-22T16:59:44+00:00 ROLLBACK (0% OK)
+2026-11-22T16:59:44+00:00 DRYRUN PASS {"type": "delete_pod", "name": "checkout-797cb78c85-jng8k"} :: dry-run ok
+2026-11-22T16:59:44+00:00 APPLY OK {"type": "delete_pod", "name": "checkout-797cb78c85-jng8k"} :: applied
+2026-11-22T17:00:59+00:00 ROLLBACK (0% OK)

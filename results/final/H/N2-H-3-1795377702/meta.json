@@ -1,0 +1,37 @@
+{
+  "id": "N2-H-3-1795377702",
+  "fault": "N2",
+  "arm": "H",
+  "rep": 3,
+  "fault_desc": "SIGSTOP payment",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T20:01:48+00:00",
+  "impact": true,
+  "alert_s": 6.6,
+  "decision": "escalate",
+  "cause": "deployment/flagd (suspected; not confirmed)",
+  "diagnosis": "All 20 recent checkout journeys fail with ReadTimeout (3 s) through frontend-proxy, while the other journey steps are OK. Checkout's own PlaceOrder p90 is about 46 ms, and its pod, endpoints, and Kafka init are healthy, so checkout is not the slow hop. frontend-proxy's egress span to flagservice (flagd) shows p90 about 15 s, and frontend-proxy POST p90 is about 2.3 s, both well above the client timeout. flagd is Running with 0 restarts and no recorded changes, but its ofrep/flagd-ui logs show 'error 400', and I did not find the cause of the flag-evaluation latency. No allowed action (set_flag, rollout_undo, restart) is supported by the evidence, so I am escalating rather than guessing.",
+  "confidence": 45,
+  "decided_s": 57.3,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.011434,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T20:02:52+00:00",
+  "total_s": 63.9,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

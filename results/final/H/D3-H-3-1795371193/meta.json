@@ -1,0 +1,46 @@
+{
+  "id": "D3-H-3-1795371193",
+  "fault": "D3",
+  "arm": "H",
+  "rep": 3,
+  "fault_desc": "unlogged cart to 0, then imageSlowLoad",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 5,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "scale",
+      "name": "cart",
+      "replicas": 1
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T18:13:19+00:00",
+  "impact": true,
+  "alert_s": 3.1,
+  "decision": "fix",
+  "cause": "deployment/cart",
+  "diagnosis": "deployment/cart is scaled to replicas=0 (generation 104, ReplicaSet cart-78b98c8995 scaled 1->0, no cart pods exist). frontend-proxy /api/cart returns 500 because there is no backend, which matches the cart-only synthetic journey failures (7/10 OK, 0/20 cart OK in the recent window). The cart pod template is unchanged at revision 26 and its only init step waits for valkey-cart, which is Running and ready, so restoring replicas should be safe. The out-of-band change flag/imageSlowLoad off->5sec (18:13:21, flag-admin) is a separate frontend latency flag and does not explain cart 500s; it should be reviewed separately. Caveat: the 0 replicas may have been a deliberate manual scale-down that the change log does not show, so confirm with the owner after restoring.",
+  "confidence": 85,
+  "decided_s": 40.2,
+  "fixed_s": 83.4,
+  "outcome": "FIXED",
+  "cost_usd": 0.003047,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T18:14:46+00:00",
+  "total_s": 86.4,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/cart"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

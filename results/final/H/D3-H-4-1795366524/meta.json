@@ -1,0 +1,45 @@
+{
+  "id": "D3-H-4-1795366524",
+  "fault": "D3",
+  "arm": "H",
+  "rep": 4,
+  "fault_desc": "unlogged cart to 0, then imageSlowLoad",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 8,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "scale",
+      "name": "cart",
+      "replicas": 1
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T16:55:30+00:00",
+  "impact": true,
+  "alert_s": 3.1,
+  "decision": "escalate",
+  "cause": "deployment/cart",
+  "diagnosis": "deployment/cart is at spec.replicas=0 with zero endpoints, so frontend-proxy /api/cart returns 500 and the cart and checkout journeys fail. valkey-cart is Running and Ready, and cartFailure is off. My earlier 'scale cart to 1' call returned an error and was never applied, so my earlier 'fix' reasoning was wrong to count as a fix. The report that the change was applied and then rolled back means the scale-up did not hold. Nothing in the change log explains who scaled cart to 0 (the ReplicaSet went from 1 to 0 around 16:52). If something is reverting replicas, that needs a human to find it. The flagd change imageSlowLoad off->5sec does not explain cart 500s. Escalate so a human can confirm whether the scale-down was intentional, find what is reverting replicas, and restore cart.",
+  "confidence": 70,
+  "decided_s": 121.7,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.004812,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T16:57:35+00:00",
+  "total_s": 124.7,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/cart"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

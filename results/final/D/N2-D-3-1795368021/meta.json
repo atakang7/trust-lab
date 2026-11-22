@@ -1,0 +1,37 @@
+{
+  "id": "N2-D-3-1795368021",
+  "fault": "N2",
+  "arm": "D",
+  "rep": 3,
+  "fault_desc": "SIGSTOP payment",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T17:20:27+00:00",
+  "impact": true,
+  "alert_s": 6.1,
+  "decision": "escalate",
+  "cause": "frontend-proxy/checkout communication timeout",
+  "diagnosis": "All deployments and pods show ready, but synthetic journeys consistently fail at checkout with ReadTimeout to frontend-proxy:8080. The logs show only startup messages from days ago, suggesting possible logging or network issues. The error pattern indicates frontend-proxy may not be properly forwarding requests to checkout, or checkout is not responding within timeout. Need deeper investigation beyond allowed actions.",
+  "confidence": 85,
+  "decided_s": 57.6,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.009476,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T17:21:30+00:00",
+  "total_s": 63.7,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

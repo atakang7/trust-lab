@@ -1,0 +1,44 @@
+{
+  "id": "C1-script-3-1795368829",
+  "fault": "C1",
+  "arm": "script",
+  "rep": 3,
+  "fault_desc": "paymentFailure 100%",
+  "model": "script",
+  "llm_calls": 0,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "set_flag",
+      "flag": "paymentFailure",
+      "variant": "off"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T17:33:55+00:00",
+  "impact": true,
+  "alert_s": 2.5,
+  "decision": "fix",
+  "cause": "flag/paymentFailure",
+  "diagnosis": null,
+  "confidence": null,
+  "decided_s": 25.0,
+  "fixed_s": 35.0,
+  "outcome": "FIXED",
+  "cost_usd": 0,
+  "served": [],
+  "end": "2026-11-22T17:34:33+00:00",
+  "total_s": 37.6,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "flag/paymentFailure"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

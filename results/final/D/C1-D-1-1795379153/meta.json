@@ -1,0 +1,37 @@
+{
+  "id": "C1-D-1-1795379153",
+  "fault": "C1",
+  "arm": "D",
+  "rep": 1,
+  "fault_desc": "paymentFailure 100%",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T20:25:59+00:00",
+  "impact": true,
+  "alert_s": 3.1,
+  "decision": "escalate",
+  "cause": "payment-65d4db6b65-5qvfs",
+  "diagnosis": "Checkout service is returning HTTP 422 errors due to payment service failures. Metrics show payment service has internal errors ('charge' span) and flagd connection errors. The payment service is failing to process charges, likely due to a feature flag issue or payment processing logic failure. All checkout requests are failing with 422 Unprocessable Entity.",
+  "confidence": 85,
+  "decided_s": 48.4,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.008465,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T20:26:51+00:00",
+  "total_s": 51.4,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

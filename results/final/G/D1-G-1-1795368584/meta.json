@@ -1,0 +1,46 @@
+{
+  "id": "D1-G-1-1795368584",
+  "fault": "D1",
+  "arm": "G",
+  "rep": 1,
+  "fault_desc": "paymentUnreachable, then benign payment release",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 3,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "set_flag",
+      "flag": "paymentUnreachable",
+      "variant": "off"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T17:29:50+00:00",
+  "impact": true,
+  "alert_s": 3.1,
+  "decision": "fix",
+  "cause": "configmap/flagd-config",
+  "diagnosis": "Checkout failures are ongoing and payment is returning errors. The paymentUnreachable flag was changed from off to on immediately before the alert; payment is running and ready, so restore the flag to off.",
+  "confidence": 99,
+  "decided_s": 33.3,
+  "fixed_s": 43.3,
+  "outcome": "FIXED",
+  "cost_usd": 0.00146,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T17:30:36+00:00",
+  "total_s": 46.4,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "flag/paymentUnreachable"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

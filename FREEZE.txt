@@ -1,0 +1,6 @@
+Frozen 2026-11-22 before final run one. Plan: 12 incidents; Luna, Haiku, DeepSeek x4; script x3; none x1; seed 20261122; final-run cap $1.00.
+dbcc5df5db29207b4c8be9ca158b21a4eb1f55601d9ba40200da0f4defe13aa5 *exp.py
+fca26e37c90b749ab3d5ed33dc5f223f264990e957d384a1571d5b6267668f49 *scorer.py
+ef372225f0b42164a3833c5cc30873ce855d436081967c2df3b07e312287ea1d *fast.py
+6896bf3ee1ef3d1eb1dd88f00420f161e1d3f3e1bdc387eb283b71985e495168 *controller.py
+35a3de160422c48a9487181277da3420fdd208fc7d6fae100398cc2b917e56d2 *EXPERIMENT_PLAN.md

@@ -1,0 +1,2 @@
+2026-11-22T16:27:11+00:00 DRYRUN PASS {"type": "patch_deployment", "name": "valkey-cart", "patch": {"spec": {"template": {"spec": {"containers": [{"name": "valkey-cart", "resources": {"limits": {"memory": "128Mi"}}}]}}}}} :: dry-run ok
+2026-11-22T16:27:11+00:00 APPLY OK {"type": "patch_deployment", "name": "valkey-cart", "patch": {"spec": {"template": {"spec": {"containers": [{"name": "valkey-cart", "resources": {"limits": {"memory": "128Mi"}}}]}}}}} :: applied

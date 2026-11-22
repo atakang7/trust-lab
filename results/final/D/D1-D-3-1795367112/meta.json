@@ -1,0 +1,37 @@
+{
+  "id": "D1-D-3-1795367112",
+  "fault": "D1",
+  "arm": "D",
+  "rep": 3,
+  "fault_desc": "paymentUnreachable, then benign payment release",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T17:05:19+00:00",
+  "impact": true,
+  "alert_s": 3.0,
+  "decision": "escalate",
+  "cause": "checkout deployment/pod",
+  "diagnosis": "All synthetic journeys failing with checkout HTTP 500 errors. The checkout pod is running and ready but producing 500 errors. Metrics show 0 error rate now but multiple pod names in historical metrics suggest frequent restarts/changes. The checkout service depends on payment service which had a recent deployment. The issue may be a dependency problem or application bug requiring deeper investigation beyond allowed actions.",
+  "confidence": 85,
+  "decided_s": 59.2,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.008712,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T17:06:21+00:00",
+  "total_s": 62.3,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

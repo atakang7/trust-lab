@@ -1,0 +1,2 @@
+2026-11-22T17:34:23+00:00 DRYRUN PASS {"type": "set_flag", "flag": "paymentFailure", "variant": "off"} :: dry-run ok
+2026-11-22T17:34:23+00:00 APPLY OK {"type": "set_flag", "flag": "paymentFailure", "variant": "off"} :: applied

@@ -1,0 +1,37 @@
+{
+  "id": "Z3-G-1-1795365357",
+  "fault": "Z3",
+  "arm": "G",
+  "rep": 1,
+  "fault_desc": "paymentFailure, cleared before page",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 3,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T16:36:04+00:00",
+  "impact": true,
+  "alert_s": 2.5,
+  "decision": "no_action",
+  "cause": "flag/paymentFailure",
+  "diagnosis": "The paymentFailure flag was set to 100% at 16:36:04, causing checkout failures, then returned to off at 16:36:08. The flag is now off and all 20 recent synthetic journeys are successful; no change is needed.",
+  "confidence": 99,
+  "decided_s": 34.0,
+  "outcome": "NO_ACTION",
+  "cost_usd": 0.002158,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T16:36:40+00:00",
+  "total_s": 36.6,
+  "score": {
+    "pass": true,
+    "how": "held",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

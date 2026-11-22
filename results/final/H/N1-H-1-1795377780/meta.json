@@ -1,0 +1,46 @@
+{
+  "id": "N1-H-1-1795377780",
+  "fault": "N1",
+  "arm": "H",
+  "rep": 1,
+  "fault_desc": "CLIENT PAUSE on valkey-cart",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 9,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "delete_pod",
+      "name": "cart-78b98c8995-8dbh2"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T20:03:07+00:00",
+  "impact": true,
+  "alert_s": 5.6,
+  "decision": "escalate",
+  "cause": "deployment/valkey-cart",
+  "diagnosis": "Cart's Redis client cannot get a working connection to valkey-cart:6379. Deleting the cart pod did not fix it: the action was rolled back and journeys are still 0% OK. Restarting cart does not clear the problem, so the fault is likely on the valkey-cart side or in the cart-to-valkey path, not in the cart pod's connection state alone. valkey-cart reports Ready with no restarts and about 1.6 MB used of a 20 Mi limit, so it may be wedged or starved in a way its own health signals don't show. Nothing in the allowed actions can safely fix this. The earlier cart-pod deletion was a low-confidence guess and should not be repeated. A human should check valkey-cart's live responsiveness (for example PING and latency), the 20 Mi memory limit, and the valkey-cart pod's connection and client counts.",
+  "confidence": 60,
+  "decided_s": 133.2,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.008909,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T20:05:25+00:00",
+  "total_s": 138.8,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/cart"
+    ],
+    "innocent_writes": [
+      "deployment/cart"
+    ],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

@@ -1,0 +1,64 @@
+{
+  "id": "C2-G-2-1795370542",
+  "fault": "C2",
+  "arm": "G",
+  "rep": 2,
+  "fault_desc": "checkout wrong payment port",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 3,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "patch_deployment",
+      "name": "checkout",
+      "patch": {
+        "spec": {
+          "template": {
+            "spec": {
+              "containers": [
+                {
+                  "name": "checkout",
+                  "env": [
+                    {
+                      "name": "PAYMENT_ADDR",
+                      "value": "payment:8080"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T18:02:29+00:00",
+  "impact": true,
+  "alert_s": 9.6,
+  "decision": "fix",
+  "cause": "deployment/checkout",
+  "diagnosis": "Checkout\u2019s PAYMENT_ADDR was changed at 18:02:29 to payment:9999, but the payment Service exposes port 8080. Checkout failures progressed from HTTP 500s to timeouts; payment itself is responding successfully. Restore the address to payment:8080.",
+  "confidence": 99,
+  "decided_s": 34.2,
+  "fixed_s": 48.4,
+  "outcome": "FIXED",
+  "cost_usd": 0.001946,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T18:03:27+00:00",
+  "total_s": 58.0,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/checkout"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

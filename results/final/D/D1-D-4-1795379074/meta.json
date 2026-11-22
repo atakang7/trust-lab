@@ -1,0 +1,46 @@
+{
+  "id": "D1-D-4-1795379074",
+  "fault": "D1",
+  "arm": "D",
+  "rep": 4,
+  "fault_desc": "paymentUnreachable, then benign payment release",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "set_flag",
+      "flag": "paymentUnreachable",
+      "variant": "off"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T20:24:40+00:00",
+  "impact": true,
+  "alert_s": 2.6,
+  "decision": "fix",
+  "cause": "flag/paymentUnreachable",
+  "diagnosis": "Checkout service is returning HTTP 500 errors for all synthetic journeys. The failures started immediately after two changes: 1) paymentUnreachable flag was set to 'on' at 20:24:40, and 2) payment deployment was updated to release 1.8.3 at 20:24:42. The checkout service likely depends on the payment service, and the paymentUnreachable flag being 'on' is causing checkout to fail when trying to process payments.",
+  "confidence": 85,
+  "decided_s": 51.4,
+  "fixed_s": 61.5,
+  "outcome": "FIXED",
+  "cost_usd": 0.005583,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T20:25:44+00:00",
+  "total_s": 64.1,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "flag/paymentUnreachable"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

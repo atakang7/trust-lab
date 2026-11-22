@@ -1,0 +1,49 @@
+{
+  "id": "D2-script-2-1795379453",
+  "fault": "D2",
+  "arm": "script",
+  "rep": 2,
+  "fault_desc": "unlogged wrong port, then benign payment release",
+  "model": "script",
+  "llm_calls": 0,
+  "attempts": 2,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "rollout_undo",
+      "name": "payment"
+    },
+    {
+      "type": "delete_pod",
+      "name": "checkout-797cb78c85-7p7jt"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T20:30:59+00:00",
+  "impact": true,
+  "alert_s": 8.1,
+  "decision": "fix",
+  "cause": "deployment/checkout",
+  "diagnosis": null,
+  "confidence": null,
+  "decided_s": 100.9,
+  "outcome": "TIMEOUT",
+  "cost_usd": 0,
+  "served": [],
+  "end": "2026-11-22T20:34:04+00:00",
+  "total_s": 184.3,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/payment",
+      "deployment/checkout"
+    ],
+    "innocent_writes": [
+      "deployment/payment"
+    ],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

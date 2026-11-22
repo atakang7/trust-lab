@@ -1,0 +1,32 @@
+{
+  "id": "D2-D-1-1795381551",
+  "fault": "D2",
+  "arm": "D",
+  "rep": 1,
+  "fault_desc": "unlogged wrong port, then benign payment release",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 25,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T21:05:57+00:00",
+  "impact": true,
+  "alert_s": 6.0,
+  "outcome": "TIMEOUT",
+  "cost_usd": 0.059139,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T21:08:15+00:00",
+  "total_s": 138.3,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

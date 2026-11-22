@@ -1,0 +1,37 @@
+{
+  "id": "Z3-H-4-1795362615",
+  "fault": "Z3",
+  "arm": "H",
+  "rep": 4,
+  "fault_desc": "paymentFailure, cleared before page",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 3,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T15:50:21+00:00",
+  "impact": true,
+  "alert_s": 2.5,
+  "decision": "no_action",
+  "cause": "none",
+  "diagnosis": "The alert was a transient checkout failure caused by the paymentFailure flag. The change log shows flag-admin set paymentFailure to 100% at 15:50:21 and back to off at 15:50:26. The flagd-config ConfigMap now has paymentFailure defaultVariant off. All 20 most recent synthetic journeys succeeded, all pods are Running and ready with no new restarts, and no warning events are present. The system has recovered, so no change is needed. The rapid on/off toggle by flag-admin is worth a human review, since it was likely a manual test.",
+  "confidence": 85,
+  "decided_s": 31.3,
+  "outcome": "NO_ACTION",
+  "cost_usd": 0.00135,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T15:50:55+00:00",
+  "total_s": 33.8,
+  "score": {
+    "pass": true,
+    "how": "held",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

@@ -1,0 +1,64 @@
+{
+  "id": "C2-H-1-1795371811",
+  "fault": "C2",
+  "arm": "H",
+  "rep": 1,
+  "fault_desc": "checkout wrong payment port",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 5,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "patch_deployment",
+      "name": "checkout",
+      "patch": {
+        "spec": {
+          "template": {
+            "spec": {
+              "containers": [
+                {
+                  "name": "checkout",
+                  "env": [
+                    {
+                      "name": "PAYMENT_ADDR",
+                      "value": "payment:8080"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T18:23:37+00:00",
+  "impact": true,
+  "alert_s": 11.1,
+  "decision": "fix",
+  "cause": "deployment/checkout",
+  "diagnosis": "deploy-bot changed checkout's PAYMENT_ADDR to payment:9999 at 18:23:37 (revision 206). The payment Service exposes port 8080 (targetPort 8080), payment has one ready endpoint, and PAYMENT_PORT=8080. Checkout's calls to payment:9999 get refused or time out, so PlaceOrder fails. Checkout pods stay Ready, so the readiness probe does not catch this. Synthetic checkout journeys are failing at about 100% since 18:23:37.",
+  "confidence": 85,
+  "decided_s": 39.5,
+  "fixed_s": 54.7,
+  "outcome": "FIXED",
+  "cost_usd": 0.003795,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T18:24:43+00:00",
+  "total_s": 65.8,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/checkout"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

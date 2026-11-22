@@ -1,0 +1,637 @@
+[
+  [
+    -9.52,
+    true,
+    null
+  ],
+  [
+    -8.52,
+    true,
+    null
+  ],
+  [
+    -7.52,
+    true,
+    null
+  ],
+  [
+    -6.52,
+    true,
+    null
+  ],
+  [
+    -5.52,
+    true,
+    null
+  ],
+  [
+    -4.52,
+    true,
+    null
+  ],
+  [
+    -3.51,
+    true,
+    null
+  ],
+  [
+    -2.51,
+    true,
+    null
+  ],
+  [
+    -1.51,
+    true,
+    null
+  ],
+  [
+    -0.51,
+    true,
+    null
+  ],
+  [
+    0.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    1.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    2.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    3.49,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    4.49,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    5.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    6.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    7.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    8.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    9.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    10.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    11.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    12.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    13.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    14.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    15.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    16.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    17.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    18.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    19.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    20.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    21.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    22.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    23.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    24.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    25.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    26.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    27.49,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    28.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    29.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    30.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    31.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    32.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    33.49,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    34.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    35.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    36.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    37.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    38.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    39.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    40.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    41.49,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    42.49,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    43.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    44.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    45.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    46.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    47.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    48.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    49.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    50.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    51.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    52.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    53.49,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    54.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    55.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    56.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    57.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    58.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    59.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    60.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    61.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    62.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    63.5,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    64.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    65.5,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    66.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    67.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    68.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    69.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    70.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    71.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    72.5,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    73.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    74.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    75.5,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    76.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    77.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    78.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    79.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    80.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    81.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    82.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    83.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    84.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    85.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    86.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    87.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    88.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    89.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    90.5,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    91.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    92.5,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    93.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    94.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    95.5,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    96.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    97.5,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    98.51,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    99.51,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    100.51,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    101.51,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    102.51,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    103.51,
+    true,
+    null
+  ],
+  [
+    104.51,
+    true,
+    null
+  ],
+  [
+    105.51,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    106.51,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    107.51,
+    true,
+    null
+  ],
+  [
+    108.51,
+    true,
+    null
+  ],
+  [
+    109.51,
+    true,
+    null
+  ],
+  [
+    110.51,
+    true,
+    null
+  ],
+  [
+    111.51,
+    true,
+    null
+  ],
+  [
+    112.51,
+    true,
+    null
+  ],
+  [
+    113.51,
+    true,
+    null
+  ],
+  [
+    114.51,
+    true,
+    null
+  ],
+  [
+    115.51,
+    true,
+    null
+  ],
+  [
+    116.51,
+    true,
+    null
+  ]
+]

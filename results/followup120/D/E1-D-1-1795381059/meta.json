@@ -1,0 +1,54 @@
+{
+  "id": "E1-D-1-1795381059",
+  "fault": "E1",
+  "arm": "D",
+  "rep": 1,
+  "fault_desc": "deny-ingress NetworkPolicy on payment, pod reconnects",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 17,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "set_flag",
+      "flag": "paymentFailure",
+      "variant": "off"
+    },
+    {
+      "type": "set_flag",
+      "flag": "paymentUnreachable",
+      "variant": "off"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T20:57:45+00:00",
+  "impact": true,
+  "alert_s": 2.6,
+  "decision": "escalate",
+  "cause": "payment service/payment-65d4db6b65-cghjl",
+  "diagnosis": "Payment service restart coincided with alert onset. Feature flag changes didn't resolve issue. Payment pod logs show metadata lookup warnings and flagd evaluation errors. Likely payment service has internal issue or dependency problem beyond feature flags.",
+  "confidence": 75,
+  "decided_s": 149.0,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.024973,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T21:00:17+00:00",
+  "total_s": 151.6,
+  "score": {
+    "pass": false,
+    "how": "acted",
+    "writes": [
+      "flag/paymentFailure",
+      "flag/paymentUnreachable"
+    ],
+    "innocent_writes": [
+      "flag/paymentFailure",
+      "flag/paymentUnreachable"
+    ],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

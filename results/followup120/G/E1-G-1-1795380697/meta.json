@@ -1,0 +1,37 @@
+{
+  "id": "E1-G-1-1795380697",
+  "fault": "E1",
+  "arm": "G",
+  "rep": 1,
+  "fault_desc": "deny-ingress NetworkPolicy on payment, pod reconnects",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 6,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T20:51:43+00:00",
+  "impact": true,
+  "alert_s": 3.2,
+  "decision": "escalate",
+  "cause": "networkpolicy/payment-ingress",
+  "diagnosis": "Checkout failures are caused by the payment-ingress NetworkPolicy, created at 20:51:43. It selects payment pods and has no ingress rules, denying all inbound traffic; frontend logs confirm connections to the payment service are refused. Payment and checkout pods are ready, but the allowed actions cannot modify NetworkPolicies.",
+  "confidence": 99,
+  "decided_s": 52.8,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.004645,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T20:52:39+00:00",
+  "total_s": 56.0,
+  "score": {
+    "pass": true,
+    "how": "escalated",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

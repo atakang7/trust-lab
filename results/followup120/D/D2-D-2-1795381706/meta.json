@@ -1,0 +1,46 @@
+{
+  "id": "D2-D-2-1795381706",
+  "fault": "D2",
+  "arm": "D",
+  "rep": 2,
+  "fault_desc": "unlogged wrong port, then benign payment release",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 21,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "rollout_undo",
+      "name": "payment"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T21:08:32+00:00",
+  "impact": true,
+  "alert_s": 5.0,
+  "decision": "escalate",
+  "cause": "deployment/payment",
+  "diagnosis": "Payment service rollout was reverted but checkout failures persist. The new payment pod (payment-6666464f8b-rmg6n) shows only startup logs with no charge activity, while checkout continues to timeout. This suggests either: 1) the payment service is not properly handling requests despite being rolled back, 2) there's a configuration or dependency issue (e.g., flagd connectivity), or 3) the checkout service has cached bad endpoints. Requires deeper investigation beyond allowed actions.",
+  "confidence": 75,
+  "decided_s": 155.7,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.044531,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T21:11:13+00:00",
+  "total_s": 160.7,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/payment"
+    ],
+    "innocent_writes": [
+      "deployment/payment"
+    ],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

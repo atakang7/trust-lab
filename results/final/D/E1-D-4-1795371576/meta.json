@@ -1,0 +1,37 @@
+{
+  "id": "E1-D-4-1795371576",
+  "fault": "E1",
+  "arm": "D",
+  "rep": 4,
+  "fault_desc": "deny-ingress NetworkPolicy on payment, pod reconnects",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T18:19:42+00:00",
+  "impact": true,
+  "alert_s": 3.1,
+  "decision": "escalate",
+  "cause": "payment-65d4db6b65-5mwdb",
+  "diagnosis": "Checkout service is returning HTTP 500 errors due to failures calling PaymentService/Charge. The payment pod was recently recreated (payment-65d4db6b65-5mwdb) and shows as running/ready, but checkout service calls to payment are failing. This suggests either a configuration issue with the payment service, network connectivity between services, or an application-level bug in payment that isn't caught by readiness probes. Since all pods show ready and no recent deployments occurred, this requires deeper investigation beyond allowed actions.",
+  "confidence": 85,
+  "decided_s": 52.8,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.007313,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T18:20:38+00:00",
+  "total_s": 55.9,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

@@ -1,0 +1,37 @@
+{
+  "id": "Z3-D-1-1795372318",
+  "fault": "Z3",
+  "arm": "D",
+  "rep": 1,
+  "fault_desc": "paymentFailure, cleared before page",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T18:32:04+00:00",
+  "impact": true,
+  "alert_s": 2.5,
+  "decision": "no_action",
+  "cause": "none",
+  "diagnosis": "Alert was triggered 25 seconds ago with checkout failures (HTTP 422). Current state shows all journeys succeeding (20/20), all deployments healthy with 1 replica ready, all pods running. System appears to have recovered spontaneously. No action needed.",
+  "confidence": 90,
+  "decided_s": 56.4,
+  "outcome": "NO_ACTION",
+  "cost_usd": 0.008875,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T18:33:03+00:00",
+  "total_s": 58.9,
+  "score": {
+    "pass": true,
+    "how": "held",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

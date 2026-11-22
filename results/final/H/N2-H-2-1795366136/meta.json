@@ -1,0 +1,37 @@
+{
+  "id": "N2-H-2-1795366136",
+  "fault": "N2",
+  "arm": "H",
+  "rep": 2,
+  "fault_desc": "SIGSTOP payment",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 8,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T16:49:02+00:00",
+  "impact": true,
+  "alert_s": 6.1,
+  "decision": "escalate",
+  "cause": "deployment/checkout",
+  "diagnosis": "Every checkout journey since the alert has timed out at frontend-proxy after 3 s, while product, recommendation, ads and cart pass. The checkout pod (checkout-64b4f8969c-f4lvq) is Ready with 0 restarts, and its endpoint has one ready address. Downstream services I checked (payment, cart, shipping, email, currency, kafka) show normal activity, and frontend-proxy shows no errors. The checkout deployment's generation (186) is ahead of its observed revision (177), and its pod was recreated at 16:44:18, so the checkout spec changed recently. Its pod logs are empty, and its 32Mi memory limit with GOMEMLIMIT=16MiB is a possible cause of stalls, but I found no OOM evidence. I could not confirm the root cause, and I did not roll back because I could not verify what revision 176 contains. A human should check checkout's latency and the 16:38\u201316:44 spec change, then decide on rollback.",
+  "confidence": 35,
+  "decided_s": 57.5,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.009549,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T16:50:06+00:00",
+  "total_s": 63.6,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

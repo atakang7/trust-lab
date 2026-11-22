@@ -1,0 +1,37 @@
+{
+  "id": "Z1-H-4-1795379217",
+  "fault": "Z1",
+  "arm": "H",
+  "rep": 4,
+  "fault_desc": "cart pod deleted, heals",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 5,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T20:27:03+00:00",
+  "impact": true,
+  "alert_s": 3.6,
+  "decision": "no_action",
+  "cause": "none",
+  "diagnosis": "The cart 500s were a transient window during cart pod replacement. Old pod cart-78b98c8995-ftsbf was stopped and replacement cart-78b98c8995-j6z4g was scheduled at 20:27:03 and became Ready at 20:27:07 with 0 restarts. The cart deployment shows 1/1 available, and the cart service selector matches the pod. The last 20 synthetic journeys all succeeded. No deploy or config change is recorded in the last 60 minutes. The cart logs show normal AddItem/GetCart/EmptyCart traffic. The new pod's init container waited on valkey-cart and then started normally. I could not query the cart error-rate metric or describe the old pod (404), so the error-window evidence rests on the events and journeys.",
+  "confidence": 80,
+  "decided_s": 37.4,
+  "outcome": "NO_ACTION",
+  "cost_usd": 0.002638,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T20:27:44+00:00",
+  "total_s": 41.0,
+  "score": {
+    "pass": true,
+    "how": "held",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

@@ -1,0 +1,70 @@
+{
+  "id": "N2-G-2-1795369103",
+  "fault": "N2",
+  "arm": "G",
+  "rep": 2,
+  "fault_desc": "SIGSTOP payment",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 6,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "patch_deployment",
+      "name": "checkout",
+      "patch": {
+        "spec": {
+          "template": {
+            "spec": {
+              "containers": [
+                {
+                  "name": "checkout",
+                  "env": [
+                    {
+                      "name": "GOMEMLIMIT",
+                      "value": "48MiB"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "memory": "64Mi"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T17:38:29+00:00",
+  "impact": true,
+  "alert_s": 6.6,
+  "decision": "fix",
+  "cause": "deployment/checkout",
+  "diagnosis": "Checkout journeys are still failing. The checkout deployment rolled out immediately before the alert and has a very tight Go memory budget (GOMEMLIMIT 16MiB, memory limit 32MiB), which may be throttling checkout under requests. Increase the memory headroom as a targeted mitigation; verify journey recovery afterward.",
+  "confidence": 62,
+  "decided_s": 66.4,
+  "outcome": "TIMEOUT",
+  "cost_usd": 0.006291,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T17:40:58+00:00",
+  "total_s": 148.3,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/checkout"
+    ],
+    "innocent_writes": [
+      "deployment/checkout"
+    ],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

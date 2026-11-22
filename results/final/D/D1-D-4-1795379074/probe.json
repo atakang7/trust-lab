@@ -1,0 +1,372 @@
+[
+  [
+    -9.75,
+    true,
+    null
+  ],
+  [
+    -8.75,
+    true,
+    null
+  ],
+  [
+    -7.75,
+    true,
+    null
+  ],
+  [
+    -6.75,
+    true,
+    null
+  ],
+  [
+    -5.75,
+    true,
+    null
+  ],
+  [
+    -4.75,
+    true,
+    null
+  ],
+  [
+    -3.75,
+    true,
+    null
+  ],
+  [
+    -2.75,
+    true,
+    null
+  ],
+  [
+    -1.75,
+    true,
+    null
+  ],
+  [
+    -0.75,
+    true,
+    null
+  ],
+  [
+    0.25,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    1.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    2.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    3.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    4.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    5.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    6.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    7.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    8.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    9.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    10.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    11.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    12.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    13.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    14.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    15.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    16.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    17.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    18.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    19.25,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    20.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    21.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    22.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    23.25,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    24.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    25.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    26.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    27.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    28.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    29.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    30.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    31.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    32.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    33.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    34.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    35.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    36.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    37.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    38.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    39.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    40.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    41.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    42.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    43.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    44.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    45.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    46.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    47.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    48.26,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    49.26,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    50.27,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    51.27,
+    false,
+    "checkout http 500 0.1s"
+  ],
+  [
+    52.27,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    53.27,
+    false,
+    "checkout http 500 0.0s"
+  ],
+  [
+    54.27,
+    true,
+    null
+  ],
+  [
+    55.27,
+    true,
+    null
+  ],
+  [
+    56.27,
+    true,
+    null
+  ],
+  [
+    57.27,
+    true,
+    null
+  ],
+  [
+    58.27,
+    true,
+    null
+  ],
+  [
+    59.27,
+    true,
+    null
+  ],
+  [
+    60.27,
+    true,
+    null
+  ],
+  [
+    61.27,
+    true,
+    null
+  ],
+  [
+    62.27,
+    true,
+    null
+  ],
+  [
+    63.27,
+    true,
+    null
+  ]
+]

@@ -1,0 +1,2 @@
+2026-11-22T15:56:50+00:00 DRYRUN PASS {"type": "scale", "name": "cart", "replicas": 1} :: dry-run ok
+2026-11-22T15:56:50+00:00 APPLY OK {"type": "scale", "name": "cart", "replicas": 1} :: applied

@@ -1,0 +1,37 @@
+{
+  "id": "Z1-D-1-1795377562",
+  "fault": "Z1",
+  "arm": "D",
+  "rep": 1,
+  "fault_desc": "cart pod deleted, heals",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T19:59:28+00:00",
+  "impact": true,
+  "alert_s": 2.5,
+  "decision": "no_action",
+  "cause": "none",
+  "diagnosis": "Synthetic journeys show 20/20 OK now, cart logs show normal activity, no errors in recent logs, deployment healthy, likely transient issue resolved.",
+  "confidence": 85,
+  "decided_s": 42.1,
+  "outcome": "NO_ACTION",
+  "cost_usd": 0.008753,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T20:00:12+00:00",
+  "total_s": 44.7,
+  "score": {
+    "pass": true,
+    "how": "held",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

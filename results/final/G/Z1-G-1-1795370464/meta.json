@@ -1,0 +1,37 @@
+{
+  "id": "Z1-G-1-1795370464",
+  "fault": "Z1",
+  "arm": "G",
+  "rep": 1,
+  "fault_desc": "cart pod deleted, heals",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 7,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T18:01:10+00:00",
+  "impact": true,
+  "alert_s": 5.5,
+  "decision": "no_action",
+  "cause": "cart/cart-78b98c8995-fjs4j",
+  "diagnosis": "The cart pod was replaced just before the alert, plausibly causing a brief interruption. The replacement is ready, cart requests are succeeding, and the latest 20 synthetic journeys all passed; no change is needed now.",
+  "confidence": 94,
+  "decided_s": 61.0,
+  "outcome": "NO_ACTION",
+  "cost_usd": 0.006292,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T18:02:16+00:00",
+  "total_s": 66.6,
+  "score": {
+    "pass": true,
+    "how": "held",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

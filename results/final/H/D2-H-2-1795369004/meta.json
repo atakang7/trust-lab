@@ -1,0 +1,64 @@
+{
+  "id": "D2-H-2-1795369004",
+  "fault": "D2",
+  "arm": "H",
+  "rep": 2,
+  "fault_desc": "unlogged wrong port, then benign payment release",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 8,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "patch_deployment",
+      "name": "checkout",
+      "patch": {
+        "spec": {
+          "template": {
+            "spec": {
+              "containers": [
+                {
+                  "name": "checkout",
+                  "env": [
+                    {
+                      "name": "PAYMENT_ADDR",
+                      "value": "payment:8080"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T17:36:51+00:00",
+  "impact": true,
+  "alert_s": 8.5,
+  "decision": "fix",
+  "cause": "deployment/checkout",
+  "diagnosis": "Checkout's PAYMENT_ADDR is payment:9999, but the payment service and pod serve gRPC on 8080 (Service port 8080, containerPort 8080, log 'listening on 0.0.0.0:8080'). Checkout's payment calls therefore fail, which shows up as checkout HTTP 500s and then ReadTimeouts through frontend-proxy. The payment rollout (release 1.8.3, 17:36:53) coincided with the failures, but payment itself looks healthy. I did not confirm whether the 9999 value predates this rollout, since I did not inspect the previous checkout ReplicaSet's env, so the cause could also be the checkout rollout at 17:36:51. Patching the env var to the correct port is the smallest safe change.",
+  "confidence": 60,
+  "decided_s": 58.4,
+  "fixed_s": 75.5,
+  "outcome": "FIXED",
+  "cost_usd": 0.00752,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T17:38:15+00:00",
+  "total_s": 84.1,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/checkout"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

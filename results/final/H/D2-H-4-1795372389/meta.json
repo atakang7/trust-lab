@@ -1,0 +1,37 @@
+{
+  "id": "D2-H-4-1795372389",
+  "fault": "D2",
+  "arm": "H",
+  "rep": 4,
+  "fault_desc": "unlogged wrong port, then benign payment release",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 8,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T18:33:16+00:00",
+  "impact": true,
+  "alert_s": 8.6,
+  "decision": "escalate",
+  "cause": "deployment/checkout",
+  "diagnosis": "Checkout journeys fail with HTTP 500, then ReadTimeout via frontend-proxy. Checkout revision 212 (checkout-797cb78c85) and payment revision 73 (payment-6666464f8b) were both rolled out around 18:33:16-18:33:18. The change log shows only the payment release (ci-bot, 'release 1.8.3'). The checkout deployment sets PAYMENT_ADDR=payment:9999, but the payment Service exposes and targets port 8080, and the payment pod is listening on 8080. Checkout's own logs were empty, so I could not confirm the failing connection directly, and I did not compare against the previous checkout ReplicaSet spec to confirm the 9999 value is new. The payment pod shows no errors and its Charge span rate is low, so payment itself looks healthy. The likely cause is the port mismatch in checkout's PAYMENT_ADDR from the coupled checkout/payment rollout. This needs a human to confirm against revision 211 and correct the address. I did not patch it because the earlier value is unverified.",
+  "confidence": 55,
+  "decided_s": 62.0,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.009052,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T18:34:26+00:00",
+  "total_s": 70.6,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

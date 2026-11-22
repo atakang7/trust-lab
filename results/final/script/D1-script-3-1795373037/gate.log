@@ -1,0 +1,5 @@
+2026-11-22T18:44:31+00:00 DRYRUN PASS {"type": "rollout_undo", "name": "payment"} :: dry-run ok
+2026-11-22T18:44:31+00:00 APPLY OK {"type": "rollout_undo", "name": "payment"} :: applied
+2026-11-22T18:45:47+00:00 ROLLBACK (0% OK)
+2026-11-22T18:45:47+00:00 DRYRUN PASS {"type": "set_flag", "flag": "paymentUnreachable", "variant": "off"} :: dry-run ok
+2026-11-22T18:45:47+00:00 APPLY OK {"type": "set_flag", "flag": "paymentUnreachable", "variant": "off"} :: applied

@@ -1,0 +1,45 @@
+{
+  "id": "D2-H-1-1795380785",
+  "fault": "D2",
+  "arm": "H",
+  "rep": 1,
+  "fault_desc": "unlogged wrong port, then benign payment release",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 6,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "rollout_undo",
+      "name": "checkout"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T20:53:11+00:00",
+  "impact": true,
+  "alert_s": 6.0,
+  "decision": "fix",
+  "cause": "deployment/checkout",
+  "diagnosis": "Checkout revision 238 (checkout-797cb78c85) was rolled out at about 20:53 with PAYMENT_ADDR=payment:9999. The payment service and container listen on 8080 (payment Service port 8080 -> targetPort 8080, and the payment log shows 'gRPC server started on 0.0.0.0:8080'), so every checkout call to payment fails with http 500. Payment itself is healthy and was not changed by this issue. Rolling checkout back to the previous revision (237) restores the working configuration.",
+  "confidence": 80,
+  "decided_s": 41.9,
+  "fixed_s": 56.0,
+  "outcome": "FIXED",
+  "cost_usd": 0.003715,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T20:54:13+00:00",
+  "total_s": 62.1,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/checkout"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

@@ -1,0 +1,37 @@
+{
+  "id": "Z2-G-2-1795375536",
+  "fault": "Z2",
+  "arm": "G",
+  "rep": 2,
+  "fault_desc": "benign release plus false alert",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 3,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T19:25:42+00:00",
+  "impact": false,
+  "alert_s": 36.2,
+  "decision": "no_action",
+  "cause": "none",
+  "diagnosis": "The alert is not currently corroborated: all 20 latest synthetic journeys are successful, product-catalog has one ready replica with no restarts, and its observed p95 latency is about 32 ms. A product-catalog release rollout occurred shortly before the alert, which may have caused a brief transient, but the service is healthy now.",
+  "confidence": 92,
+  "decided_s": 40.6,
+  "outcome": "NO_ACTION",
+  "cost_usd": 0.001991,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T19:26:59+00:00",
+  "total_s": 76.8,
+  "score": {
+    "pass": true,
+    "how": "held",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

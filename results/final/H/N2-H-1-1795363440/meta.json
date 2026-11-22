@@ -1,0 +1,37 @@
+{
+  "id": "N2-H-1-1795363440",
+  "fault": "N2",
+  "arm": "H",
+  "rep": 1,
+  "fault_desc": "SIGSTOP payment",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T16:04:06+00:00",
+  "impact": true,
+  "alert_s": 6.1,
+  "decision": "escalate",
+  "cause": "deployment/checkout (suspected; not confirmed)",
+  "diagnosis": "Checkout is failing for about 3 of every 7 journeys. Requests to frontend-proxy /api/checkout time out at 3 s. Checkout's PlaceOrder spans show roughly 0.67/s errors against about 0.22/s successes, with the errors on the PaymentService/Charge path. Payment is healthy: its logs show charges completing, its pod is Ready with 0 restarts, and it has no error spans. No changes were recorded in the last 60 minutes. The checkout pod's logs were empty and frontend-proxy metrics returned no data in the last query, so I could not isolate the failing hop. The cause is not established. No safe, targeted action is clear from the evidence, so this needs a human to look at checkout and the frontend-proxy to checkout path.",
+  "confidence": 35,
+  "decided_s": 58.3,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.010618,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T16:05:10+00:00",
+  "total_s": 64.4,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

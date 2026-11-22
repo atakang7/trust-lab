@@ -1,0 +1,46 @@
+{
+  "id": "D1-H-2-1795367961",
+  "fault": "D1",
+  "arm": "H",
+  "rep": 2,
+  "fault_desc": "paymentUnreachable, then benign payment release",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 3,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "set_flag",
+      "flag": "paymentUnreachable",
+      "variant": "off"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T17:19:27+00:00",
+  "impact": true,
+  "alert_s": 2.6,
+  "decision": "fix",
+  "cause": "ConfigMap/flagd-config (flag paymentUnreachable set to on by flag-admin at 17:19:28)",
+  "diagnosis": "All checkout journeys fail with HTTP 500 starting at 17:19:30. Two changes landed seconds before the alert: flag-admin set paymentUnreachable from off to on at 17:19:28, and ci-bot rolled payment to 1.8.3 at 17:19:30. The payment pod is Running, ready, with 0 restarts and logs show the gRPC server started, so the payment service itself is up. The flag description is 'Payment service is unavailable', and its on-state makes checkout's payment calls fail, which explains the 500s. The flag is the fault; the release is not the cause. Reverting the flag to off restores the baseline.",
+  "confidence": 80,
+  "decided_s": 33.3,
+  "fixed_s": 43.3,
+  "outcome": "FIXED",
+  "cost_usd": 0.002029,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T17:20:13+00:00",
+  "total_s": 45.9,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "flag/paymentUnreachable"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

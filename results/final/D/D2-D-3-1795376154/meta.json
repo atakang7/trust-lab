@@ -1,0 +1,37 @@
+{
+  "id": "D2-D-3-1795376154",
+  "fault": "D2",
+  "arm": "D",
+  "rep": 3,
+  "fault_desc": "unlogged wrong port, then benign payment release",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T19:36:00+00:00",
+  "impact": true,
+  "alert_s": 6.1,
+  "decision": "escalate",
+  "cause": "checkout service dependency failures (likely payment service)",
+  "diagnosis": "Checkout service is returning HTTP 500 errors and timeouts. Prometheus metrics show checkout service errors calling PaymentService/Charge. Recent deployment scaling events suggest payment service may be failing. All pods show as running but checkout logs are empty, indicating possible silent failures or dependency issues that require deeper investigation beyond allowed actions.",
+  "confidence": 85,
+  "decided_s": 51.6,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.009241,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T19:36:58+00:00",
+  "total_s": 57.7,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

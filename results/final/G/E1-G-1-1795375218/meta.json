@@ -1,0 +1,37 @@
+{
+  "id": "E1-G-1-1795375218",
+  "fault": "E1",
+  "arm": "G",
+  "rep": 1,
+  "fault_desc": "deny-ingress NetworkPolicy on payment, pod reconnects",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 6,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T19:20:24+00:00",
+  "impact": true,
+  "alert_s": 3.1,
+  "decision": "escalate",
+  "cause": "Deployment/payment",
+  "diagnosis": "Checkout is still returning HTTP 500 on every recent synthetic journey. Checkout error metrics implicate PaymentService/Charge, although payment currently has a ready pod and service endpoint. The payment pod was replaced just before the alert, but failures continued afterward; the available evidence does not establish a safe in-scope remediation.",
+  "confidence": 78,
+  "decided_s": 61.7,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.003955,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T19:21:29+00:00",
+  "total_s": 64.8,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

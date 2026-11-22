@@ -1,0 +1,63 @@
+{
+  "id": "N1-G-4-1795364926",
+  "fault": "N1",
+  "arm": "G",
+  "rep": 4,
+  "fault_desc": "CLIENT PAUSE on valkey-cart",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 6,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "patch_deployment",
+      "name": "valkey-cart",
+      "patch": {
+        "spec": {
+          "template": {
+            "spec": {
+              "containers": [
+                {
+                  "name": "valkey-cart",
+                  "resources": {
+                    "limits": {
+                      "memory": "128Mi"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T16:28:52+00:00",
+  "impact": true,
+  "alert_s": 5.6,
+  "decision": "fix",
+  "cause": "deployment/valkey-cart",
+  "diagnosis": "Cart requests are still failing with Valkey connection/backlog timeouts. The Valkey endpoint is present, but its deployment has an unusually restrictive 20Mi memory limit, which can make the cart store unavailable under load. Increase that limit; the resulting rollout will restart Valkey for cart clients to reconnect.",
+  "confidence": 84,
+  "decided_s": 56.1,
+  "fixed_s": 66.2,
+  "outcome": "FIXED",
+  "cost_usd": 0.004811,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T16:30:03+00:00",
+  "total_s": 71.8,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/valkey-cart"
+    ],
+    "innocent_writes": [],
+    "state_loss": true,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

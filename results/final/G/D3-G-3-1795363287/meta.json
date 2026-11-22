@@ -1,0 +1,46 @@
+{
+  "id": "D3-G-3-1795363287",
+  "fault": "D3",
+  "arm": "G",
+  "rep": 3,
+  "fault_desc": "unlogged cart to 0, then imageSlowLoad",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 3,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "scale",
+      "name": "cart",
+      "replicas": 1
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T16:01:33+00:00",
+  "impact": true,
+  "alert_s": 3.0,
+  "decision": "fix",
+  "cause": "deployment/cart",
+  "diagnosis": "Cart is scaled to 0 with no ready pods or service endpoints, causing the cart API 500s. The recent imageSlowLoad flag change is unrelated.",
+  "confidence": 100,
+  "decided_s": 33.3,
+  "fixed_s": 55.5,
+  "outcome": "FIXED",
+  "cost_usd": 0.001818,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T16:02:31+00:00",
+  "total_s": 58.5,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "deployment/cart"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

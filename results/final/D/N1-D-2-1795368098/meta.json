@@ -1,0 +1,37 @@
+{
+  "id": "N1-D-2-1795368098",
+  "fault": "N1",
+  "arm": "D",
+  "rep": 2,
+  "fault_desc": "CLIENT PAUSE on valkey-cart",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T17:21:44+00:00",
+  "impact": true,
+  "alert_s": 5.6,
+  "decision": "escalate",
+  "cause": "frontend-proxy deployment",
+  "diagnosis": "Synthetic journeys failing on cart step with ReadTimeout and 500 errors from frontend-proxy. Metrics show frontend-proxy error rate elevated (0.5375 errors/s). No recent logs available; pod is running but likely experiencing high latency or internal failures. All deployments have 1 replica and appear ready. The issue may be internal to frontend-proxy (Envoy) configuration or resource constraints, but allowed actions (scale, patch, rollout undo) are unlikely to resolve root cause (e.g., misconfiguration, memory pressure). Need human investigation of frontend-proxy internal state and resource usage.",
+  "confidence": 75,
+  "decided_s": 59.6,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.007099,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T17:22:49+00:00",
+  "total_s": 65.1,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

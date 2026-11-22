@@ -1,0 +1,37 @@
+{
+  "id": "E1-H-4-1795378207",
+  "fault": "E1",
+  "arm": "H",
+  "rep": 4,
+  "fault_desc": "deny-ingress NetworkPolicy on payment, pod reconnects",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T20:10:13+00:00",
+  "impact": true,
+  "alert_s": 3.2,
+  "decision": "escalate",
+  "cause": "deployment/payment",
+  "diagnosis": "Checkout is failing 20 of 20 recent synthetic journeys with HTTP 500, so this is ongoing and not recovered. The failing calls are checkout's PlaceOrder and its calls to payment Charge (about 6 Charge errors against 50 unset in the last 2 minutes). The payment pod payment-65d4db6b65-nw2s5 was created at 20:10:13, just before the alert, and its log shows a 'MetadataLookupWarning: All promises were rejected' line. Its own Charge error rate reads 0, so this does not fully explain the 500s. The payment deployment is at generation 157 against revision 104, and flagd logs show repeated flag-file churn (CHMOD/REMOVE) in the same window. No change record explains any of this. I could not confirm the root cause, and I did not find a safe action within the allowed set. A human should check the checkout 500 response bodies and traces, payment's dependencies (the metadata lookup failure), and the recent flagd-config edits.",
+  "confidence": 35,
+  "decided_s": 58.0,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.008498,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T20:11:14+00:00",
+  "total_s": 61.1,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

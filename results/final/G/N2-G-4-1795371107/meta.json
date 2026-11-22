@@ -1,0 +1,37 @@
+{
+  "id": "N2-G-4-1795371107",
+  "fault": "N2",
+  "arm": "G",
+  "rep": 4,
+  "fault_desc": "SIGSTOP payment",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 6,
+  "attempts": 1,
+  "blocked_attempts": 1,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T18:11:53+00:00",
+  "impact": true,
+  "alert_s": 6.6,
+  "decision": "escalate",
+  "cause": "deployment/checkout",
+  "diagnosis": "Checkout journeys continue to time out, and the checkout pod was created shortly before the failures. The attempted rollback was rejected because no previous revision is available; the current evidence does not identify a safe in-scope alternative, so a human should investigate the recent checkout deployment and restore a known-good version.",
+  "confidence": 75,
+  "decided_s": 64.2,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.005326,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T18:13:04+00:00",
+  "total_s": 70.8,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

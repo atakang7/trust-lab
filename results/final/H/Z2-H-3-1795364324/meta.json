@@ -1,0 +1,37 @@
+{
+  "id": "Z2-H-3-1795364324",
+  "fault": "Z2",
+  "arm": "H",
+  "rep": 3,
+  "fault_desc": "benign release plus false alert",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 7,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T16:18:50+00:00",
+  "impact": false,
+  "alert_s": 16.2,
+  "decision": "no_action",
+  "cause": "none",
+  "diagnosis": "The product-catalog alert fired 16 s after release 1.8.3 rolled out (ci-bot, 16:18:50). The rollout completed cleanly: the single new pod product-catalog-d4c54b7cd-2gvjz is Ready with 0 restarts, and the old ReplicaSet was scaled to 0. Synthetic journeys were 10/10 OK before the alert and 20/20 OK since, so there is no user-facing failure. Server-side p95 latency is about 42 ms on the 5m window, with no sign of a sustained spike. The only anomaly I found is a transient latency blip during the pod cutover. astronomy-db restarted once at 15:44 (OOMKilled) but has been Ready since then. I could not get a clean per-pod 1m latency or error-rate series, and I have no pre-release p95 baseline, so the 42 ms figure is not directly compared to normal. Recommend re-checking product-catalog p95 and the 1.8.3 changelog shortly.",
+  "confidence": 70,
+  "decided_s": 48.7,
+  "outcome": "NO_ACTION",
+  "cost_usd": 0.004659,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T16:19:55+00:00",
+  "total_s": 64.8,
+  "score": {
+    "pass": true,
+    "how": "held",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

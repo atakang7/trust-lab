@@ -1,0 +1,46 @@
+{
+  "id": "C1-G-2-1795379398",
+  "fault": "C1",
+  "arm": "G",
+  "rep": 2,
+  "fault_desc": "paymentFailure 100%",
+  "model": "openai/gpt-6-luna",
+  "llm_calls": 2,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "set_flag",
+      "flag": "paymentFailure",
+      "variant": "off"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T20:30:05+00:00",
+  "impact": true,
+  "alert_s": 3.1,
+  "decision": "fix",
+  "cause": "ConfigMap/flagd-config",
+  "diagnosis": "The paymentFailure flag was changed from off to 100% just before the alert. Checkout journeys are consistently failing with HTTP 422, and payment charge errors are present. Restore the flag to off.",
+  "confidence": 99,
+  "decided_s": 29.1,
+  "fixed_s": 39.2,
+  "outcome": "FIXED",
+  "cost_usd": 0.001239,
+  "served": [
+    "OpenAI:openai/gpt-6-luna"
+  ],
+  "end": "2026-11-22T20:30:47+00:00",
+  "total_s": 42.2,
+  "score": {
+    "pass": true,
+    "how": "fixed",
+    "writes": [
+      "flag/paymentFailure"
+    ],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": true
+  },
+  "reset_ok": true
+}

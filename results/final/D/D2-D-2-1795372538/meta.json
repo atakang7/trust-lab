@@ -1,0 +1,37 @@
+{
+  "id": "D2-D-2-1795372538",
+  "fault": "D2",
+  "arm": "D",
+  "rep": 2,
+  "fault_desc": "unlogged wrong port, then benign payment release",
+  "model": "deepseek/deepseek-v3.2",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T18:35:44+00:00",
+  "impact": true,
+  "alert_s": 5.5,
+  "decision": "escalate",
+  "cause": "payment deployment version 1.8.3",
+  "diagnosis": "Payment deployment was updated to version 1.8.3 at 18:35:46, 4 seconds before alert. Checkout service depends on payment service (PAYMENT_ADDR=payment:9999). The new payment version may have introduced a breaking change or bug causing checkout to fail with HTTP 500 errors, then timeouts as payment service became unresponsive. Checkout pod is healthy but cannot communicate with payment service.",
+  "confidence": 85,
+  "decided_s": 55.6,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.007511,
+  "served": [
+    "DeepInfra:deepseek/deepseek-v3.2"
+  ],
+  "end": "2026-11-22T18:36:45+00:00",
+  "total_s": 61.1,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

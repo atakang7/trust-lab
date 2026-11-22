@@ -1,0 +1,46 @@
+{
+  "id": "D2-H-3-1795363519",
+  "fault": "D2",
+  "arm": "H",
+  "rep": 3,
+  "fault_desc": "unlogged wrong port, then benign payment release",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 10,
+  "attempts": 1,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "rollout_undo",
+      "name": "payment"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T16:05:25+00:00",
+  "impact": true,
+  "alert_s": 9.1,
+  "decision": "escalate",
+  "cause": "deployment/checkout",
+  "diagnosis": "The payment rollback to revision 34 did not restore checkout: journeys are still 0% OK after the rollback. So payment's 1.8.3 release is probably not the sole cause. The strongest remaining lead is a config mismatch in checkout: its PAYMENT_ADDR is payment:9999, while the payment Service exposes only port 8080. I could not confirm this against traffic, because the promql queries returned no data. checkout-797cb78c85-9ds42 logs were empty. Checkout is the failing hop (HTTP 500s, then ReadTimeouts via frontend-proxy). A human should check checkout's live error logs and traces, confirm the payment Service port and checkout's PAYMENT_ADDR, and fix whichever is wrong. Verify whether the checkout or frontend-proxy deployment changed recently, since the change log only shows the payment release.",
+  "confidence": 40,
+  "decided_s": 133.7,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.007651,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T16:07:48+00:00",
+  "total_s": 142.8,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/payment"
+    ],
+    "innocent_writes": [
+      "deployment/payment"
+    ],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

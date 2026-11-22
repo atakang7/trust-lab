@@ -1,0 +1,37 @@
+{
+  "id": "E1-H-1-1795378026",
+  "fault": "E1",
+  "arm": "H",
+  "rep": 1,
+  "fault_desc": "deny-ingress NetworkPolicy on payment, pod reconnects",
+  "model": "anthropic/claude-haiku-5.5",
+  "llm_calls": 9,
+  "attempts": 0,
+  "blocked_attempts": 0,
+  "actions_applied": [],
+  "valid": true,
+  "t0": "2026-11-22T20:07:13+00:00",
+  "impact": true,
+  "alert_s": 2.6,
+  "decision": "escalate",
+  "cause": "deployment/payment",
+  "diagnosis": "Checkout is failing because payment Charge calls are erroring. In the last 2 minutes payment recorded about 7.6 Charge errors against 54 successful calls (roughly 12% error rate), and checkout PlaceOrder and Charge errors rose in step. The payment deployment was rolled to a new pod (payment-65d4db6b65-5zr7f, started 20:07:13) just before the alert. Payment logs show 'MetadataLookupWarning: All promises were rejected', and payment's flagd EventStream spans are erroring (about 697 errors). The flagd-config ConfigMap shows paymentFailure and paymentUnreachable as 'off', so the injected fault is not visible in config and may be in flagd runtime state or in payment's connection to flagd. The change log is empty, so I could not link the failure to a specific change. I did not finish checking the payment revision diff or flagd's live flag state, so a rollout_undo is not yet justified. A human should compare payment revision 104 with 103 and check flagd's live evaluation of the payment flags.",
+  "confidence": 40,
+  "decided_s": 56.6,
+  "outcome": "ESCALATED",
+  "cost_usd": 0.008647,
+  "served": [
+    "Anthropic:anthropic/claude-haiku-5.5"
+  ],
+  "end": "2026-11-22T20:08:12+00:00",
+  "total_s": 59.2,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [],
+    "innocent_writes": [],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}

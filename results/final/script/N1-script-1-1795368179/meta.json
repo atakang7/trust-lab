@@ -1,0 +1,50 @@
+{
+  "id": "N1-script-1-1795368179",
+  "fault": "N1",
+  "arm": "script",
+  "rep": 1,
+  "fault_desc": "CLIENT PAUSE on valkey-cart",
+  "model": "script",
+  "llm_calls": 0,
+  "attempts": 2,
+  "blocked_attempts": 0,
+  "actions_applied": [
+    {
+      "type": "delete_pod",
+      "name": "cart-78b98c8995-v4477"
+    },
+    {
+      "type": "delete_pod",
+      "name": "cart-78b98c8995-gktwt"
+    }
+  ],
+  "valid": true,
+  "t0": "2026-11-22T17:23:05+00:00",
+  "impact": true,
+  "alert_s": 6.1,
+  "decision": "fix",
+  "cause": "deployment/cart",
+  "diagnosis": null,
+  "confidence": null,
+  "decided_s": 100.1,
+  "outcome": "TIMEOUT",
+  "cost_usd": 0,
+  "served": [],
+  "end": "2026-11-22T17:26:06+00:00",
+  "total_s": 181.4,
+  "score": {
+    "pass": false,
+    "how": "missed",
+    "writes": [
+      "deployment/cart",
+      "deployment/cart"
+    ],
+    "innocent_writes": [
+      "deployment/cart",
+      "deployment/cart"
+    ],
+    "state_loss": false,
+    "recovered_any_means": false
+  },
+  "reset_ok": true
+}
